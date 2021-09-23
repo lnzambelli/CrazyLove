@@ -1,0 +1,62 @@
+<form [formGroup]="addressForm" novalidate>
+  <mat-card class="shipping-card">
+    <mat-card-header class="flex justify-center">
+      <mat-card-title>Contactanos por aca.. </mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <div class="row">
+        <div class="col">
+          <mat-form-field class="full-width">
+            <input matInput placeholder="E-mail" type="email" formControlName="email">
+            <mat-error *ngIf="addressForm.controls['email'].hasError('required')">
+              El Email es <strong>requerido</strong>
+            </mat-error>
+            <mat-error *ngIf="addressForm.controls['email'].hasError('email')">
+              Email ingresado <strong>no valido</strong>
+            </mat-error>
+          </mat-form-field>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <mat-form-field class="full-width">
+            <input matInput placeholder="Nombre" formControlName="firstName">
+            <mat-error *ngIf="addressForm.controls['firstName'].hasError('required')">
+              El nombre es <strong>requerido</strong>
+            </mat-error>
+          </mat-form-field>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <mat-form-field class="full-width">
+            <input matInput placeholder="Dirección" formControlName="address">
+            <mat-error *ngIf="addressForm.controls['address'].hasError('required')">
+              La dirección es <strong>requerida</strong>
+            </mat-error>
+          </mat-form-field>
+        </div>
+      </div>    
+      <div class="row">
+        <div class="col">
+          <mat-form-field class="full-width">
+            <input matInput placeholder="Localidad" formControlName="city">
+            <mat-error *ngIf="addressForm.controls['city'].hasError('required')">
+              La localidad es <strong>requerida</strong>
+            </mat-error>
+          </mat-form-field>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <mat-form-field class="full-width">
+            <textarea matInput placeholder="Escriba aqui.." formControlName="mensaje"></textarea>
+          </mat-form-field>
+        </div>
+      </div>
+    </mat-card-content>
+    <mat-card-actions class="flex justify-center">
+      <button mat-raised-button color="primary" type="button" [disabled]="!addressForm.valid" (click)="enviarMensaje()">Enviar</button>
+    </mat-card-actions>
+  </mat-card>
+</form>

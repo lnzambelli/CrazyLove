@@ -1,0 +1,107 @@
+{
+    "cards": [
+      {
+        "producto": "Difusor",
+        "imagen": "https://material.angular.io/assets/img/examples/shiba2.jpg",
+        "precio": "2000"
+      },
+      {
+        "producto": "aaaaaa",
+        "imagen": "https://material.angular.io/assets/img/examples/shiba2.jpg",
+        "precio": "3000"
+      },
+      {
+        "producto": "Agua",
+        "imagen": "https://material.angular.io/assets/img/examples/shiba2.jpg",
+        "precio": "3000" 
+      },
+      {
+        "producto": "Vso",
+        "imagen": "https://material.angular.io/assets/img/examples/shiba2.jpg",
+        "precio": "500"
+      }
+    ],
+    "cards1": [
+      {
+        "producto": "Cat2od1",
+        "imagen": "https://material.angular.io/assets/img/examples/shiba2.jpg",
+        "precio": "2000"
+      },
+      {
+        "producto": "Cat2Prod2",
+        "imagen": "https://material.angular.io/assets/img/examples/shiba2.jpg",
+        "precio": "3000"
+      },
+      {
+        "producto": "C-Prod",
+        "imagen": "https://material.angular.io/assets/img/examples/shiba2.jpg",
+        "precio": "3000"
+      }
+    ],
+    "cards2": [
+      {
+        "producto": "C-Prod1",
+        "imagen": "https://material.angular.io/assets/img/examples/shiba2.jpg",
+        "precio": "1000"
+      },
+      {
+        "producto": "C-Prod2",
+        "imagen": "https://material.angular.io/assets/img/examples/shiba2.jpg",
+        "precio": "100"
+      },
+      {
+        "producto": "C-Prod3",
+        "imagen": "https://material.angular.io/assets/img/examples/shiba2.jpg",
+        "precio": "200"
+      }
+    ],
+    "datos": [
+      {
+        "nombreEmpresa": "Nombre",
+        "correo": "correo@",
+        "telefono": "03492",
+        "facebook": "https://www.facebook.com",
+        "instagram": "https://www.instagram.com"
+      }
+    ],
+    "catalogo":[
+      {
+        "marca": "Saphirus",
+        "imagen": "https://material.angular.io/assets/img/examples/shiba2.jpg",
+        "titulo": "VER PRODUCTOS",
+        "url": "/product"
+      },
+      {
+        "marca": "Tulia",
+        "imagen": "https://material.angular.io/assets/img/examples/shiba2.jpg",
+        "titulo": "VER PRODUCTOS",
+        "url": "/product"
+      },
+      {
+        "marca": "Hogar",
+        "imagen": "https://material.angular.io/assets/img/examples/shiba2.jpg",
+        "titulo": "VER PRODUCTOS",
+        "url": "/product"
+      }
+    ],
+    "servicios":[
+      {
+        "marca": "Entrega a domicilio",
+        "imagen": "https://material.angular.io/assets/img/examples/shiba2.jpg",
+        "titulo": "",
+        "url": ""
+      },
+      {
+        "marca": "Stock Permanente",
+        "imagen": "https://material.angular.io/assets/img/examples/shiba2.jpg",
+        "titulo": "",
+        "url": ""
+      },
+      {
+        "marca": "Regalos",
+        "imagen": "https://material.angular.io/assets/img/examples/shiba2.jpg",
+        "titulo": "",
+        "url": ""
+      }
+    ]
+  }

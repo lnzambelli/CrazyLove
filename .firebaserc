@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "crazylove-80d59": {
+      "hosting": {
+        "app-crazy-love": [
+          "crazylove-80d59"
+        ]
+      }
+    }
+  }
+}
