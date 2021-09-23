@@ -46,8 +46,7 @@ import {MensajeContactoService} from 'src/app/services/mensaje-contacto.service'
                <button mat-button color="primary" (click)="enviarPedido(nombreApellido.value, telefono.value)">Confirmar Pedido</button>
           </mat-card>
           </mat-card-content>
-      
-</mat-card>  
+    </mat-card>  
   `,
   changeDetection: ChangeDetectionStrategy.OnPush
 })
@@ -77,8 +76,9 @@ export class ShoppingCartComponent implements OnInit {
 
 
  enviarPedido(nombreApellido: string, telefono: string){
-    this.datosDeTabla.forEach(prod =>{
-      const articulo = (prod.cantidad+" "+prod.nombre+": $"+prod.total)
+   if (nombreApellido !=="" || telefono!==""){
+      this.datosDeTabla.forEach(prod =>{
+         const articulo = (prod.cantidad+" "+prod.nombre+": $"+prod.total)
         this.arrayProd.push(articulo)
     })
 
@@ -94,6 +94,10 @@ export class ShoppingCartComponent implements OnInit {
   }, error =>{
     console.log(error)
   })
+   }else{
+     this.dialog.showErrorDialog("ERROR: Campos incompletos",[])
+   }
+    
  }
 
 }
