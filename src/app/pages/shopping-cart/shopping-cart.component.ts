@@ -11,13 +11,14 @@ import {MensajeContactoService} from 'src/app/services/mensaje-contacto.service'
   template: `
     <mat-card style="box-shadow: none">
       <mat-card>
-          <mat-card-header class="flex justify-center pt-8">
-              <mat-card-title class="w-100" >Orden de compra</mat-card-title>
+          <mat-card-header class="flex justify-center pt-8" >
+              <mat-card-title *ngIf="datosDeTabla.length!==0"class="w-100" >Orden de compra</mat-card-title>
+              <mat-card-title *ngIf="datosDeTabla.length===0" class="w-100" >Carrito Vacio</mat-card-title>
           </mat-card-header>
        </mat-card>
-        <mat-card-content *ngFor="let prod of datosDeTabla" value="prod.nombre">
+        <mat-card-content *ngFor="let prod of datosDeTabla" value="prod.nombre" class="mb-8">
            <mat-card class="flex flex-row py-0">
-             <mat-card-content class="flex flex-row justify-between w-100 mt-16" >
+             <mat-card-content class="flex flex-row justify-between w-100 mt-16 mb-0" >
                 <p>{{prod.cantidad}}   {{prod.nombre |uppercase}}</p>
                 <span>{{prod.total |currency}}</span>
             </mat-card-content>
@@ -29,7 +30,7 @@ import {MensajeContactoService} from 'src/app/services/mensaje-contacto.service'
           </mat-card>
         </mat-card-content>
         <mat-card-content *ngIf="datosDeTabla.length!==0" class="flex justify-center">
-            <mat-chip class="p-4"color="warn" selected>
+            <mat-chip class="p-4 w-100 text-align-center"color="warn" selected>
                  Importe Total: {{resultado |currency}}
            </mat-chip>
         </mat-card-content>
@@ -104,9 +105,6 @@ export class ShoppingCartComponent implements OnInit {
 
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { concat } from 'rxjs';
-import { MatInput } from '@angular/material/input';
-
 
 
 @NgModule({

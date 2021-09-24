@@ -7,18 +7,18 @@ import {map, startWith} from 'rxjs/operators';
   selector: 'app-autocomplete-field',
   template: `
   <form class="example-form">
-  <mat-form-field style="width: 100px" >
-    <mat-label>Fragancia</mat-label>
-    <input type="text"
-           placeholder="e"
+    <mat-form-field  >
+      <mat-label>Categoria</mat-label>
+      <input type="text"
+           placeholder="Seleccionar Categoria"
            aria-label="Number"
            matInput
            [formControl]="myControl"
            [matAutocomplete]="auto">
-    <mat-autocomplete autoActiveFirstOption #auto="matAutocomplete">
-      <mat-option *ngFor="let option of filteredOptions | async" [value]="option">
-        {{option}}
-      </mat-option>
+      <mat-autocomplete autoActiveFirstOption #auto="matAutocomplete">
+        <mat-option *ngFor="let option of filteredOptions | async" [value]="option">
+          {{option}}
+        </mat-option>
     </mat-autocomplete>
   </mat-form-field>
 </form>
@@ -27,7 +27,7 @@ import {map, startWith} from 'rxjs/operators';
 export class AutocompleteFieldComponent implements OnInit {
 
   myControl = new FormControl();
-  options: string[] = ['One', 'Two', 'Three'];
+  options: string[] = ['Categoria 1', 'Categoria 2', 'Categoria 3'];
   filteredOptions!: Observable<string[]>;
   
   constructor() { }

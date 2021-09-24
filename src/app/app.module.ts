@@ -62,7 +62,6 @@ import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
     ErrorDialogComponent,
     AutocompleteFieldComponent,
     SeleccionarFraganciaComponent,
-    
   ],
   imports: [
     BrowserModule,

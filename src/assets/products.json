@@ -55,6 +55,57 @@
         "precio": "200"
       }
     ],
+    "cards3": [
+      {
+        "producto": "aaaaa",
+        "imagen": "https://material.angular.io/assets/img/examples/shiba2.jpg",
+        "precio": "100"
+      },
+      {
+        "producto": "bbbbb",
+        "imagen": "https://material.angular.io/assets/img/examples/shiba2.jpg",
+        "precio": "100"
+      },
+      {
+        "producto": "ccccc",
+        "imagen": "https://material.angular.io/assets/img/examples/shiba2.jpg",
+        "precio": "200"
+      }
+    ],
+    "cards4": [
+      {
+        "producto": "hola",
+        "imagen": "https://material.angular.io/assets/img/examples/shiba2.jpg",
+        "precio": "100"
+      },
+      {
+        "producto": "holaaa",
+        "imagen": "https://material.angular.io/assets/img/examples/shiba2.jpg",
+        "precio": "100"
+      },
+      {
+        "producto": "hoolaa",
+        "imagen": "https://material.angular.io/assets/img/examples/shiba2.jpg",
+        "precio": "200"
+      }
+    ],
+    "cards5": [
+      {
+        "producto": "1111",
+        "imagen": "https://material.angular.io/assets/img/examples/shiba2.jpg",
+        "precio": "100"
+      },
+      {
+        "producto": "22222",
+        "imagen": "https://material.angular.io/assets/img/examples/shiba2.jpg",
+        "precio": "100"
+      },
+      {
+        "producto": "3333",
+        "imagen": "https://material.angular.io/assets/img/examples/shiba2.jpg",
+        "precio": "200"
+      }
+    ],
     "datos": [
       {
         "nombreEmpresa": "Nombre",
