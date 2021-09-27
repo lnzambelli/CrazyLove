@@ -48,16 +48,6 @@ export class DashboardComponent implements OnChanges {
   public agregarAlCarrito(card: CardDto){
       this.dialog.showConfirmDialog(["Agregado al carrito"])
       this.cartService.obtenerDatos(card);
-      /*
-      if (card.fragancia===""){
-        this.dialog.showConfirmDialog(["Agregado al carrito"])
-      }else{
-          this.arrayFragancias = card.fragancia.split('-');
-          this.dialog.seleccionarFragancia(this.arrayFragancias)  
-      }
-        this.cartService.obtenerDatos(card);
-      //this.router.navigate(['/shopping-cart']);
-      */
   }
 
   private createCards() {

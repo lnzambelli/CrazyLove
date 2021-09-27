@@ -1,0 +1,31 @@
+@import '~@angular/material/theming';
+@import '../colores.scss';
+@import './md-naranja.scss';
+@import './md-blanco.scss';
+@import './md-gris-rojo.scss';
+
+@include mat-core();
+
+$accent: mat-palette($md-naranja);
+$primary: mat-palette($md-blanco);
+$warn: mat-palette($md-gris-rojo);
+
+.primary {
+    background:#285c54;
+    color: #000000;
+}
+
+.accent {
+    background: $naranja;
+    color: #000000;
+}
+
+.warn {
+    background: $gris-rojo;
+    color: #ffffff;
+}
+
+
+$theme: mat-light-theme($primary, $accent, $warn);
+
+@include angular-material-theme($theme);

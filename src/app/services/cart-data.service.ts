@@ -14,7 +14,6 @@ export class CartDataService {
     public dataTable: Array<Card> =[];
     public dataTableProd: Array<Producto> =[];
     resultado: number =0;
-    totalLineas:number = 0;
 
     public obtenerDatos(card: Card){
         const existePord = this.dataTableProd.find(product => product.nombre === card.producto);
@@ -51,9 +50,5 @@ export class CartDataService {
 
    public enviarResultado(): number{
      return this.resultado
-   }
-
-   public enviarCantidadProductos(): number{
-      return this.totalLineas
    }
 }

@@ -6,10 +6,11 @@ import data from 'src/assets/products.json';
   selector: 'app-product',
   template: `
     <mat-toolbar class="flex justify-between  flex-wrap" style="height: auto" color="primary">
-      <button mat-button  (click)="expandirCategorias=1">Proveedor 1</button>
+      <button mat-button (click)="expandirCategorias=1">Proveedor 1</button>
       <button mat-button (click)="expandirCategorias=2">Proveedor 2</button>
-      <button mat-button (click)="expandirCategorias=3">Otro</button> 
+      <button mat-button (click)="expandirCategorias=3">Paquetes</button> 
     </mat-toolbar>
+
     <mat-toolbar class="flex justify-between flex-wrap" style="height: auto" *ngIf="expandirCategorias===1">
       <button mat-button color="primary" (click)="obtenerCards(1)">Categoria 1</button>
       <button mat-button color="primary"(click)="obtenerCards(2)">Categoria 2</button>

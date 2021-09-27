@@ -8,7 +8,7 @@ import { Component, OnInit, ChangeDetectionStrategy, Input } from '@angular/core
       <mat-card style="width: 40%" >
          <mat-card-header class="flex flex-column align-items-center">
             <div mat-card-avatar class="mb-16">
-              <mat-icon style="font-size: 36px;">whatsapp</mat-icon>
+              <mat-icon style="font-size: 36px">whatsapp</mat-icon>
             </div>
             <mat-card-title>{{contactoWhatsapp}}</mat-card-title>
         </mat-card-header>

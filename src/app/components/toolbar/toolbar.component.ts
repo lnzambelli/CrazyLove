@@ -1,7 +1,7 @@
 import { Router } from '@angular/router';
 import { MaterialModule } from './../../material/material.module';
 import { CommonModule } from '@angular/common';
-import { Component, NgModule, OnInit} from '@angular/core';
+import { Component, NgModule, OnInit, OnChanges, OnDestroy } from '@angular/core';
 import data from 'src/assets/products.json';
 import {CartDataService} from 'src/app/services/cart-data.service'
 
@@ -23,7 +23,7 @@ import {CartDataService} from 'src/app/services/cart-data.service'
           <a mat-icon-button [href]="linkInstagram" Target="_blank">
              <mat-icon>facebook</mat-icon>
           </a>
-          <button mat-icon-button routerLink="/shopping-cart" >
+          <button mat-icon-button routerLink="/shopping-cart">
              <mat-icon>shopping_cart</mat-icon>
           </button>
         </div>
@@ -53,7 +53,7 @@ export class ToolbarComponent implements OnInit{
     this.linkFacebook = data.datos[0].facebook;
     this.linkInstagram = data.datos[0].instagram;
   }
-
+ 
 }
 
 @NgModule({

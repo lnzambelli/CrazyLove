@@ -42,6 +42,8 @@ import { SeleccionarFraganciaComponent } from './services/dialog-msj/seleccionar
 import { AngularFireModule } from '@angular/fire/compat';
 import { environment } from 'src/environments/environment';
 import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
+import {MatButtonToggleModule} from '@angular/material/button-toggle';
+import {MatTooltipModule} from '@angular/material/tooltip';
 
 @NgModule({
   declarations: [
@@ -61,7 +63,7 @@ import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
     ConfirmDialogComponent,
     ErrorDialogComponent,
     AutocompleteFieldComponent,
-    SeleccionarFraganciaComponent,
+    SeleccionarFraganciaComponent
   ],
   imports: [
     BrowserModule,
@@ -87,7 +89,9 @@ import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
     MatBadgeModule,
     MatAutocompleteModule,
     AngularFireModule.initializeApp(environment.firebase),
-    AngularFirestoreModule
+    AngularFirestoreModule,
+    MatButtonToggleModule,
+    MatTooltipModule
   ],
   providers: [],
   bootstrap: [AppComponent]

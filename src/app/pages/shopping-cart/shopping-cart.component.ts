@@ -68,6 +68,7 @@ export class ShoppingCartComponent implements OnInit {
     this.resultado = this.cartService.enviarResultado();
  }
 
+
  eliminarItems(nombreProducto: string){
     this.dialog.showErrorDialog("Producto eliminado",[])
     this.datosDeTabla = this.datosDeTabla.filter(prod => prod.nombre !== nombreProducto);

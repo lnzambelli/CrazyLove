@@ -9,7 +9,9 @@ import data from 'src/assets/products.json'
     <app-carousel></app-carousel>
     <app-catalogo [cards]="cards" [titulo]="tituloMarcas"></app-catalogo>
     <app-catalogo [cards]="services" [titulo]="tituloServicios" ></app-catalogo>
-    <h2 class="flex justify-center pt-8 mb-8" style="background-color: #EFF2FB ">Donde encontrarnos?</h2>
+    <div class="flex justify-center py-8 m-8">
+      <mat-chip color="primary" selected class="flex justify-center py-8" style="width: 50%; border-radius: 10px 100px / 120px;">Donde encontrarnos?</mat-chip>
+      </div>
       <nav class="flex flex-wrap justify-evenly flex-1">
         <mat-card class="example-card mt-8 py-0" style="max-width: 100vh">
            <img mat-card-image src="assets/img/mapaUbicacion.img" alt="catalogo"> 

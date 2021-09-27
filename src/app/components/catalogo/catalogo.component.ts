@@ -5,7 +5,9 @@ import { CardsStore } from './card-catalogo-store';
 @Component({
   selector: 'app-catalogo',
   template: `
-      <h2 class="flex justify-center pt-8 mb-0" style="background-color: #EFF2FB " >{{titulo}}</h2>
+      <div class="flex justify-center py-8">
+      <mat-chip color="primary" selected class="flex justify-center py-8" style="width: 50%; border-radius: 10px 100px / 120px;">{{titulo | uppercase}}</mat-chip>
+      </div>
       <nav class="flex flex-wrap justify-evenly flex-1">
         <mat-card class="example-card mt-8" style="max-width: 250px" *ngFor="let card of cardsStore.state$ | async">
            <mat-card-header class="">
