@@ -13,7 +13,7 @@ import { MatDialogModule, MatDialogRef, MAT_DIALOG_DATA } from '@angular/materia
            <div *ngFor="let error of data.errors" class="errorMessage">{{error}}</div>
       </div>
     <div mat-dialog-actions class="justify-around">
-       <button mat-button mat-dialog-close color="accent">Aceptar</button>
+       <button mat-button mat-dialog-close color="warn">Aceptar</button>
     </div> 
   `,
    changeDetection: ChangeDetectionStrategy.OnPush
