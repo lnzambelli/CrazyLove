@@ -1,7 +1,7 @@
 import { Router } from '@angular/router';
 import { MaterialModule } from './../../material/material.module';
 import { CommonModule } from '@angular/common';
-import { Component, NgModule, OnInit, OnChanges, OnDestroy } from '@angular/core';
+import { Component, NgModule, OnInit } from '@angular/core';
 import data from 'src/assets/products.json';
 import {CartDataService} from 'src/app/services/cart-data.service'
 
@@ -14,14 +14,14 @@ import {CartDataService} from 'src/app/services/cart-data.service'
           <button mat-icon-button (click)="expandirMenu()">
             <mat-icon>menu</mat-icon>
           </button>
-        <span>{{nombreDeEmpresa}}</span>
+          <span>{{nombreDeEmpresa}}</span>
         </div>
         <div> 
           <a mat-icon-button [href]="linkFacebook" Target="_blank">
-             <mat-icon>photo_camera</mat-icon>
+             <mat-icon>facebook</mat-icon>
           </a>
           <a mat-icon-button [href]="linkInstagram" Target="_blank">
-             <mat-icon>facebook</mat-icon>
+             <mat-icon>photo_camera</mat-icon>
           </a>
           <button mat-icon-button routerLink="/shopping-cart">
              <mat-icon>shopping_cart</mat-icon>

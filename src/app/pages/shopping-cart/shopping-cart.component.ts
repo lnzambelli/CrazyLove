@@ -1,10 +1,11 @@
+import { CommonModule } from '@angular/common';
+import { ChangeDetectionStrategy, Component, NgModule, OnInit, OnChanges } from '@angular/core';
+import { Producto } from 'src/app/components/dashboard/productos';
+import { MaterialModule } from 'src/app/material/material.module';
+import { CartDataService } from 'src/app/services/cart-data.service';
+import { DialogHandlerService } from 'src/app/services/dialog-msj/dialog-handler.service';
+import { MensajeContactoService } from 'src/app/services/mensaje-contacto.service';
 import { PedidoWeb } from './../../models/pedido-web';
-import { Component, OnInit, ChangeDetectionStrategy, } from '@angular/core';
-import {CartDataService} from 'src/app/services/cart-data.service'
-import { Producto, Productos } from 'src/app/components/dashboard/productos';
-import {MaterialModule} from 'src/app/material/material.module'
-import {DialogHandlerService} from 'src/app/services/dialog-msj/dialog-handler.service';
-import {MensajeContactoService} from 'src/app/services/mensaje-contacto.service'
 
 @Component({
   selector: 'app-shopping-cart',
@@ -16,10 +17,11 @@ import {MensajeContactoService} from 'src/app/services/mensaje-contacto.service'
               <mat-card-title *ngIf="datosDeTabla.length===0" class="w-100" >Carrito Vacio</mat-card-title>
           </mat-card-header>
        </mat-card>
+
         <mat-card-content *ngFor="let prod of datosDeTabla" value="prod.nombre" class="mb-8">
            <mat-card class="flex flex-row py-0">
              <mat-card-content class="flex flex-row justify-between w-100 mt-16 mb-0" >
-                <p>{{prod.cantidad}}   {{prod.nombre |uppercase}}</p>
+                <p>{{prod.cantidad }}     {{prod.nombre |uppercase}}</p>
                 <span>{{prod.total |currency}}</span>
             </mat-card-content>
             <mat-card-actions>
@@ -30,10 +32,11 @@ import {MensajeContactoService} from 'src/app/services/mensaje-contacto.service'
           </mat-card>
         </mat-card-content>
         <mat-card-content *ngIf="datosDeTabla.length!==0" class="flex justify-center">
-            <mat-chip class="p-4 w-100 text-align-center"color="warn" selected>
+            <mat-chip class="p-4 w-100 text-align-center"color="accent" selected>
                  Importe Total: {{resultado |currency}}
            </mat-chip>
         </mat-card-content>
+
           <mat-card-content *ngIf="datosDeTabla.length!==0" class="flex justify-center mb-32 flex-column">
             <mat-card class="flex justify-center flex-column">
                 <mat-form-field >
@@ -44,20 +47,21 @@ import {MensajeContactoService} from 'src/app/services/mensaje-contacto.service'
                     <mat-label>Telefono</mat-label>
                     <input matInput placeholder="Telefono" #telefono>
                </mat-form-field>
-               <button mat-button color="primary" (click)="enviarPedido(nombreApellido.value, telefono.value)">Confirmar Pedido</button>
+               <button mat-button color="primary" (click)="enviarPedido(nombreApellido.value, telefono.value)" [disabled]="!estadoConexion">Confirmar Pedido</button>
           </mat-card>
           </mat-card-content>
-    </mat-card>  
+    </mat-card> 
   `,
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class ShoppingCartComponent implements OnInit {
+export class ShoppingCartComponent implements OnInit{
 
   datosDeTabla: Array<Producto> =[]
   resultado: number = 0;
   nombreApellido: string ="";
   telefono:  string ="";
-  arrayProd: string[]= []
+  arrayProd: string[]= [];
+  estadoConexion!: boolean;
   
   constructor(private cartService: CartDataService,
               private dialog: DialogHandlerService,
@@ -66,8 +70,8 @@ export class ShoppingCartComponent implements OnInit {
   ngOnInit(){
     this.datosDeTabla = this.cartService.enviarDatoATabla();
     this.resultado = this.cartService.enviarResultado();
+    this.estadoConexion = navigator.onLine
  }
-
 
  eliminarItems(nombreProducto: string){
     this.dialog.showErrorDialog("Producto eliminado",[])
@@ -78,35 +82,30 @@ export class ShoppingCartComponent implements OnInit {
 
 
  enviarPedido(nombreApellido: string, telefono: string){
-   if (nombreApellido !=="" || telefono!==""){
+   if (nombreApellido !=="" || telefono!=="" ){
       this.datosDeTabla.forEach(prod =>{
          const articulo = (prod.cantidad+" "+prod.nombre+": $"+prod.total)
         this.arrayProd.push(articulo)
-    })
+      })
 
-    const PEDIDO: PedidoWeb = {
+      const PEDIDO: PedidoWeb = {
         nombre: nombreApellido,
         telefono: telefono,
         productos: this.arrayProd,
         precioTotal: this.resultado
-    }
-    this.mensajeContacto.guardarMensaje(PEDIDO,"pedidoWeb").then(()=>{
-      this.dialog.showConfirmDialog(["Pedido confirmado..Gracias por su compra!!"])
+      }
       
-  }, error =>{
-    console.log(error)
-  })
-   }else{
+     this.mensajeContacto.guardarMensaje(PEDIDO,"pedidoWeb").then(()=>{
+        this.dialog.showConfirmDialog(["Pedido confirmado..Gracias por su compra!!"])
+      }, error =>{
+        console.log(error)
+      })
+   
+    }else{
      this.dialog.showErrorDialog("ERROR: Campos incompletos",[])
    }
-    
  }
-
 }
-
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-
 
 @NgModule({
   declarations: [],

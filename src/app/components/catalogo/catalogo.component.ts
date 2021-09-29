@@ -11,11 +11,11 @@ import { CardsStore } from './card-catalogo-store';
       <nav class="flex flex-wrap justify-evenly flex-1">
         <mat-card class="example-card mt-8" style="max-width: 250px" *ngFor="let card of cardsStore.state$ | async">
            <mat-card-header class="">
-             <mat-card-title>{{card.marca}}</mat-card-title>
+             <mat-card-title style="color: #128c7e">{{card.marca}}</mat-card-title>
             </mat-card-header>
-           <img mat-card-image [src]="card.imagen" alt="catalogo">
+           <img mat-card-image [src]="card.imagen" alt="catalogo" class="mb-0">
            <mat-card-actions class="flex justify-around">
-               <a type="button" [href]="card.url">{{card.titulo}}</a>
+               <button mat-button color="primary" [routerLink]="card.url" style="">{{card.titulo}}</button>
             </mat-card-actions>
        </mat-card>
     </nav>

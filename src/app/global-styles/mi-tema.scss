@@ -1,31 +1,123 @@
 @import '~@angular/material/theming';
-@import '../colores.scss';
-@import './md-naranja.scss';
-@import './md-blanco.scss';
-@import './md-gris-rojo.scss';
 
 @include mat-core();
 
-$accent: mat-palette($md-naranja);
-$primary: mat-palette($md-blanco);
-$warn: mat-palette($md-gris-rojo);
+//GAMA COLORES
+$my-primary-color: (
+    50 : #e3f1f0,
+    100 : #b8ddd8,
+    200 : #89c6bf,
+    300 : #59afa5,
+    400 : #369d91,
+    500 : #128c7e,
+    600 : #108476,
+    700 : #0d796b,
+    800 : #0a6f61,
+    900 : #055c4e,
+    A100 : #8effea,
+    A200 : #5bffe0,
+    A400 : #28ffd7,
+    A700 : #0fffd2,
+    contrast: (
+        50 : #000000,
+        100 : #000000,
+        200 : #000000,
+        300 : #000000,
+        400 : #ffffff,
+        500 : #ffffff,
+        600 : #ffffff,
+        700 : #ffffff,
+        800 : #ffffff,
+        900 : #ffffff,
+        A100 : #000000,
+        A200 : #000000,
+        A400 : #000000,
+        A700 : #000000,
+    )
+);
 
-.primary {
-    background:#285c54;
-    color: #000000;
-}
+$my-accent-color: (
+    50 : #f7fafb,
+    100 : #ecf3f4,
+    200 : #dfeced,
+    300 : #d2e4e6,
+    400 : #c9dee0,
+    500 : #bfd8db,
+    600 : #b9d4d7,
+    700 : #b1ced2,
+    800 : #a9c8cd,
+    900 : #9bbfc4,
+    A100 : #ffffff,
+    A200 : #ffffff,
+    A400 : #ffffff,
+    A700 : #e6fcff,
+    contrast: (
+        50 : #000000,
+        100 : #000000,
+        200 : #000000,
+        300 : #000000,
+        400 : #000000,
+        500 : #000000,
+        600 : #000000,
+        700 : #000000,
+        800 : #000000,
+        900 : #000000,
+        A100 : #000000,
+        A200 : #000000,
+        A400 : #000000,
+        A700 : #000000,
+    )
+);
 
-.accent {
-    background: $naranja;
-    color: #000000;
-}
+$my-warn-color: (
+    50 : #fef2f2,
+    100 : #fcdede,
+    200 : #fbc9c9,
+    300 : #f9b3b3,
+    400 : #f7a2a2,
+    500 : #f69292,
+    600 : #f58a8a,
+    700 : #f37f7f,
+    800 : #f27575,
+    900 : #ef6363,
+    A100 : #ffffff,
+    A200 : #ffffff,
+    A400 : #fff6f6,
+    A700 : #ffdddd,
+    contrast: (
+        50 : #000000,
+        100 : #000000,
+        200 : #000000,
+        300 : #000000,
+        400 : #000000,
+        500 : #000000,
+        600 : #000000,
+        700 : #000000,
+        800 : #000000,
+        900 : #000000,
+        A100 : #000000,
+        A200 : #000000,
+        A400 : #000000,
+        A700 : #000000,
+    )
+);
 
-.warn {
-    background: $gris-rojo;
-    color: #ffffff;
-}
+
+//PALETA DE COLORES
+$my-palette-primary: mat-palette($my-primary-color);
+$my-palette-accent: mat-palette($my-accent-color);
+$my-palette-warn: mat-palette($my-warn-color);
 
 
-$theme: mat-light-theme($primary, $accent, $warn);
+//TEMA PROPIO
+$my-theme: mat-light-theme((
+    color: (
+        primary: $my-palette-primary,
+        accent: $my-palette-accent,
+        warn: $my-palette-warn
+    )
+));
 
-@include angular-material-theme($theme);
+
+// APLICAR NUESTRO TEMA A ANGULAR
+@include angular-material-theme($my-theme);

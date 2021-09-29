@@ -15,11 +15,11 @@ import {DialogHandlerService} from 'src/app/services/dialog-msj/dialog-handler.s
         <mat-card-header class="">
           <mat-card-title>{{card.producto}}</mat-card-title>
         </mat-card-header>
-        <img mat-card-image [src]="card.imagen" alt="producto" class="">
+        <img mat-card-image [src]="card.imagen" alt="producto" class="mb-0">
         <mat-card-actions class="flex justify-around pt-0">
             <span class="p-8">{{card.precio | currency}} </span>
             <button mat-raised-button (click)="agregarAlCarrito(card)" style="box-shadow: none" class="flex justify-end">
-               <mat-icon >add_shopping_cart</mat-icon>
+               <mat-icon>add_shopping_cart</mat-icon>
             </button>
           </mat-card-actions>
         </mat-card>
