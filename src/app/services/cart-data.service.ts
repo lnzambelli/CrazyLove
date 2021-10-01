@@ -1,8 +1,7 @@
+import { BehaviorSubject } from 'rxjs';
 import { Producto } from './../components/dashboard/productos';
-import { Observable } from 'rxjs';
 import { Card } from './../components/dashboard/card';
 import { Injectable } from '@angular/core';
-
 
 
 @Injectable({
@@ -51,4 +50,5 @@ export class CartDataService {
    public enviarResultado(): number{
      return this.resultado
    }
+
 }

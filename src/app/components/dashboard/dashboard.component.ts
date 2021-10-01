@@ -2,7 +2,6 @@ import { CartDataService } from './../../services/cart-data.service';
 import { Component, Input, OnChanges } from '@angular/core';
 import {  CardDto } from './card';
 import { CardsStore } from './cards-store';
-import { Router } from '@angular/router';
 import {DialogHandlerService} from 'src/app/services/dialog-msj/dialog-handler.service';
 
 
@@ -19,7 +18,7 @@ import {DialogHandlerService} from 'src/app/services/dialog-msj/dialog-handler.s
         <mat-card-actions class="flex justify-around pt-0">
             <span class="p-8">{{card.precio | currency}} </span>
             <button mat-raised-button (click)="agregarAlCarrito(card)" style="box-shadow: none" class="flex justify-end">
-               <mat-icon>add_shopping_cart</mat-icon>
+               <mat-icon >add_shopping_cart</mat-icon>
             </button>
           </mat-card-actions>
         </mat-card>
@@ -34,11 +33,8 @@ export class DashboardComponent implements OnChanges {
   @Input() cards: Array<CardDto> = [];
 
   public cardsStore = new CardsStore();
-
-  public arrayFragancias: string[] = [];
  
   constructor(private cartService: CartDataService, 
-                      private router: Router,
                       private dialog: DialogHandlerService) {}
 
   ngOnChanges(): void {

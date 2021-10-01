@@ -121,3 +121,5 @@ $my-theme: mat-light-theme((
 
 // APLICAR NUESTRO TEMA A ANGULAR
 @include angular-material-theme($my-theme);
+
+//COPIAR DIRECCION DEL SCSS EN ANGULAR.JSON

@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { ChangeDetectionStrategy, Component, NgModule, OnInit, OnChanges } from '@angular/core';
+import { ChangeDetectionStrategy, Component, NgModule, OnInit} from '@angular/core';
 import { Producto } from 'src/app/components/dashboard/productos';
 import { MaterialModule } from 'src/app/material/material.module';
 import { CartDataService } from 'src/app/services/cart-data.service';
@@ -65,12 +65,13 @@ export class ShoppingCartComponent implements OnInit{
   
   constructor(private cartService: CartDataService,
               private dialog: DialogHandlerService,
-              private mensajeContacto: MensajeContactoService) { }
+              private mensajeContacto: MensajeContactoService) { 
+  }
 
   ngOnInit(){
     this.datosDeTabla = this.cartService.enviarDatoATabla();
     this.resultado = this.cartService.enviarResultado();
-    this.estadoConexion = navigator.onLine
+    this.estadoConexion = navigator.onLine;
  }
 
  eliminarItems(nombreProducto: string){
@@ -80,8 +81,7 @@ export class ShoppingCartComponent implements OnInit{
     this.resultado = this.cartService.enviarResultado();
  }
 
-
- enviarPedido(nombreApellido: string, telefono: string){
+ async enviarPedido(nombreApellido: string, telefono: string){
    if (nombreApellido !=="" || telefono!=="" ){
       this.datosDeTabla.forEach(prod =>{
          const articulo = (prod.cantidad+" "+prod.nombre+": $"+prod.total)
@@ -95,11 +95,12 @@ export class ShoppingCartComponent implements OnInit{
         precioTotal: this.resultado
       }
       
-     this.mensajeContacto.guardarMensaje(PEDIDO,"pedidoWeb").then(()=>{
-        this.dialog.showConfirmDialog(["Pedido confirmado..Gracias por su compra!!"])
+      await this.mensajeContacto.guardarMensaje(PEDIDO,"pedidoWeb").then(()=>{
+        this.dialog.showConfirmDialog(["Pedido confirmado..Gracias por su compra!!"]);             
       }, error =>{
         console.log(error)
       })
+      location.reload()
    
     }else{
      this.dialog.showErrorDialog("ERROR: Campos incompletos",[])
