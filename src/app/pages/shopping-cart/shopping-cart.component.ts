@@ -4,7 +4,7 @@ import { Producto } from 'src/app/components/dashboard/productos';
 import { MaterialModule } from 'src/app/material/material.module';
 import { CartDataService } from 'src/app/services/cart-data.service';
 import { DialogHandlerService } from 'src/app/services/dialog-msj/dialog-handler.service';
-import { MensajeContactoService } from 'src/app/services/mensaje-contacto.service';
+import { FirestoreService } from 'src/app/services/firestore.service';
 import { PedidoWeb } from './../../models/pedido-web';
 
 @Component({
@@ -65,7 +65,7 @@ export class ShoppingCartComponent implements OnInit{
   
   constructor(private cartService: CartDataService,
               private dialog: DialogHandlerService,
-              private mensajeContacto: MensajeContactoService) { 
+              private firestoreService: FirestoreService) { 
   }
 
   ngOnInit(){
@@ -95,7 +95,7 @@ export class ShoppingCartComponent implements OnInit{
         precioTotal: this.resultado
       }
       
-      await this.mensajeContacto.guardarMensaje(PEDIDO,"pedidoWeb").then(()=>{
+      await this.firestoreService.guardarMensaje(PEDIDO,"pedidoWeb").then(()=>{
         this.dialog.showConfirmDialog(["Pedido confirmado..Gracias por su compra!!"]);             
       }, error =>{
         console.log(error)

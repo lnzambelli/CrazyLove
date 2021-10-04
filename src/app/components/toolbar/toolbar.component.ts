@@ -32,7 +32,7 @@ import {CartDataService} from 'src/app/services/cart-data.service'
         <button mat-button routerLink="/home" (click)="expandirMenu()">Home</button>
         <button mat-button routerLink="/product" (click)="expandirMenu()">Productos</button>
         <button mat-button routerLink="/contact" (click)="expandirMenu()">Contacto</button>
-    </mat-toolbar-row>
+      </mat-toolbar-row>
     </mat-toolbar>
   `,
 })
@@ -53,7 +53,6 @@ export class ToolbarComponent implements OnInit{
     this.linkFacebook = data.datos[0].facebook;
     this.linkInstagram = data.datos[0].instagram;
   }
- 
 }
 
 @NgModule({

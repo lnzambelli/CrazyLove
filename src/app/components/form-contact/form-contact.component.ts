@@ -3,7 +3,7 @@ import { Component, NgModule } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import {DialogHandlerService} from 'src/app/services/dialog-msj/dialog-handler.service'
-import {MensajeContactoService} from 'src/app/services/mensaje-contacto.service';
+import {FirestoreService} from 'src/app/services/firestore.service';
 import {MensajeContacto} from 'src/app/models/mensaje-contacto'
 
 @Component({
@@ -21,7 +21,7 @@ export class AddresFormComponent {
     mensaje:  [""],
   });
 
-  constructor(private fb: FormBuilder, private dialog: DialogHandlerService, private router: Router, private mensajeConatacto: MensajeContactoService) {}
+  constructor(private fb: FormBuilder, private dialog: DialogHandlerService, private router: Router, private firestoreService: FirestoreService) {}
 
   enviarMensaje(){
     if (this.addressForm.valid){
@@ -45,7 +45,7 @@ export class AddresFormComponent {
       city: this.addressForm.value.city,
       mensaje: this.addressForm.value.mensaje
     }
-    this.mensajeConatacto.guardarMensaje(TARJETA,"mensajes").then(()=>{
+    this.firestoreService.guardarMensaje(TARJETA,"mensajes").then(()=>{
         console.log("tarjeta guardada")
     }, error =>{
       console.log(error)
