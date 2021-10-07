@@ -1,118 +1,43 @@
 {
     "cards": [
       {
-        "producto": "Difusor",
+        "producto": "Difusor Flores Blancas",
         "imagen": "https://material.angular.io/assets/img/examples/shiba2.jpg",
-        "precio": "2000"
+        "precio": "320"
       },
       {
-        "producto": "aaaaaa",
+        "producto": "Aerosol Hawai",
         "imagen": "https://material.angular.io/assets/img/examples/shiba2.jpg",
-        "precio": "3000"
+        "precio": "310"
       },
       {
-        "producto": "Agua",
+        "producto": "Home Spray Breeze",
         "imagen": "https://material.angular.io/assets/img/examples/shiba2.jpg",
-        "precio": "3000" 
+        "precio": "450"
       },
       {
-        "producto": "Vso",
+        "producto": "Textil Lola",
         "imagen": "https://material.angular.io/assets/img/examples/shiba2.jpg",
-        "precio": "500"
-      }
-    ],
-    "cards1": [
-      {
-        "producto": "Cat2od1",
-        "imagen": "https://material.angular.io/assets/img/examples/shiba2.jpg",
-        "precio": "2000"
+        "precio": "230"
       },
       {
-        "producto": "Cat2Prod2",
-        "imagen": "https://material.angular.io/assets/img/examples/shiba2.jpg",
-        "precio": "3000"
-      },
-      {
-        "producto": "C-Prod",
-        "imagen": "https://material.angular.io/assets/img/examples/shiba2.jpg",
-        "precio": "3000"
-      }
-    ],
-    "cards2": [
-      {
-        "producto": "C-Prod1",
-        "imagen": "https://material.angular.io/assets/img/examples/shiba2.jpg",
-        "precio": "1000"
-      },
-      {
-        "producto": "C-Prod2",
+        "producto": "Paquete Sahumerios x10",
         "imagen": "https://material.angular.io/assets/img/examples/shiba2.jpg",
         "precio": "100"
       },
       {
-        "producto": "C-Prod3",
+        "producto": "Bombitas Defumación Palo Santo x4",
         "imagen": "https://material.angular.io/assets/img/examples/shiba2.jpg",
-        "precio": "200"
-      }
-    ],
-    "cards3": [
-      {
-        "producto": "aaaaa",
-        "imagen": "https://material.angular.io/assets/img/examples/shiba2.jpg",
-        "precio": "100"
-      },
-      {
-        "producto": "bbbbb",
-        "imagen": "https://material.angular.io/assets/img/examples/shiba2.jpg",
-        "precio": "100"
-      },
-      {
-        "producto": "ccccc",
-        "imagen": "https://material.angular.io/assets/img/examples/shiba2.jpg",
-        "precio": "200"
-      }
-    ],
-    "cards4": [
-      {
-        "producto": "hola",
-        "imagen": "https://material.angular.io/assets/img/examples/shiba2.jpg",
-        "precio": "100"
-      },
-      {
-        "producto": "holaaa",
-        "imagen": "https://material.angular.io/assets/img/examples/shiba2.jpg",
-        "precio": "100"
-      },
-      {
-        "producto": "hoolaa",
-        "imagen": "https://material.angular.io/assets/img/examples/shiba2.jpg",
-        "precio": "200"
-      }
-    ],
-    "cards5": [
-      {
-        "producto": "1111",
-        "imagen": "https://material.angular.io/assets/img/examples/shiba2.jpg",
-        "precio": "100"
-      },
-      {
-        "producto": "22222",
-        "imagen": "https://material.angular.io/assets/img/examples/shiba2.jpg",
-        "precio": "100"
-      },
-      {
-        "producto": "3333",
-        "imagen": "https://material.angular.io/assets/img/examples/shiba2.jpg",
-        "precio": "200"
+        "precio": "120"
       }
     ],
     "datos": [
       {
-        "nombreEmpresa": "Nombre",
-        "correo": "correo@",
-        "telefono": "03492",
-        "facebook": "https://www.facebook.com",
-        "instagram": "https://www.instagram.com"
+        "nombreEmpresa": "Crazy Love",
+        "correo": "virgiferrari@hotmail.com",
+        "telefono": "(03492)15213095",
+        "facebook": "https://www.facebook.com/vircrazylove/",
+        "instagram": "https://www.instagram.com/invites/contact/?i=1k1avztojlcic&utm_content=3v3y7ea"
       }
     ],
     "catalogo":[
@@ -129,7 +54,7 @@
         "url": "/product"
       },
       {
-        "marca": "Hogar",
+        "marca": "Jira",
         "imagen": "https://material.angular.io/assets/img/examples/shiba2.jpg",
         "titulo": "VER PRODUCTOS",
         "url": "/product"

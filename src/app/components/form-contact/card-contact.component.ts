@@ -10,7 +10,7 @@ import { Component, OnInit, ChangeDetectionStrategy, Input } from '@angular/core
             <div mat-card-avatar class="mb-16">
               <mat-icon style="font-size: 36px">whatsapp</mat-icon>
             </div>
-            <mat-card-title>{{contactoWhatsapp}}</mat-card-title>
+            <mat-card-title style="font-size: small;">{{contactoWhatsapp}}</mat-card-title>
         </mat-card-header>
       </mat-card>
       <mat-card style="width: 40%">
@@ -18,7 +18,7 @@ import { Component, OnInit, ChangeDetectionStrategy, Input } from '@angular/core
             <div mat-card-avatar class="mb-16">
               <mat-icon style="font-size: 36px;">email</mat-icon>
             </div>
-            <mat-card-title>{{contactoCorreo}}</mat-card-title>
+            <mat-card-title style="font-size: small;">{{contactoCorreo}}</mat-card-title>
         </mat-card-header>
       </mat-card>
     </div>

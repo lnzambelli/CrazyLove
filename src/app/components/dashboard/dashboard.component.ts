@@ -8,20 +8,20 @@ import {DialogHandlerService} from 'src/app/services/dialog-msj/dialog-handler.s
 @Component({
   selector: 'app-dashboard',
   template: `
-  <mat-card style="box-shadow: none">
+  <mat-card style="box-shadow: none" >
     <nav class="flex flex-wrap justify-evenly flex-1 mb-16">
-      <mat-card class="example-card mt-8" style="max-width: 125px" *ngFor="let card of cardsStore.state$ | async">
-        <mat-card-header class="">
-          <mat-card-title>{{card.producto}}</mat-card-title>
+      <mat-card class="example-card mt-4 pb-0" style="max-width: 250px" *ngFor="let card of cardsStore.state$ | async">
+        <mat-card-header class="mb-4">
+          <mat-card-title style="font-size: small" >{{card.producto |titlecase}}</mat-card-title>
         </mat-card-header>
-        <img mat-card-image [src]="card.imagen" alt="producto" class="mb-0">
-        <mat-card-actions class="flex justify-around pt-0">
+        <img mat-card-image [src]="card.imagen" alt="producto" class="mb-0"  >
+        <mat-card-actions class="flex justify-between pt-0 mb-4">
             <span class="p-8">{{card.precio | currency}} </span>
             <button mat-raised-button (click)="agregarAlCarrito(card)" style="box-shadow: none" class="flex justify-end">
                <mat-icon >add_shopping_cart</mat-icon>
             </button>
-          </mat-card-actions>
-        </mat-card>
+        </mat-card-actions>
+      </mat-card>
     </nav>
   </mat-card>
   `,

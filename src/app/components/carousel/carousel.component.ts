@@ -4,7 +4,7 @@ import { Component, NgModule, OnInit } from '@angular/core';
 @Component({
   selector: 'app-carousel',
   template: `
-    <img src="https://material.angular.io/assets/img/examples/shiba2.jpg" style="width: 100%;">
+    <img src="https://material.angular.io/assets/img/examples/shiba2.jpg" style="width: 100%;margin-top: 56px">
   `,
   styles: ['img { max-height: 400px }']
 })

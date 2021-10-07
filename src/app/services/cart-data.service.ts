@@ -1,4 +1,4 @@
-import { BehaviorSubject } from 'rxjs';
+import { Observable, Subject } from 'rxjs';
 import { Producto } from './../components/dashboard/productos';
 import { Card } from './../components/dashboard/card';
 import { Injectable } from '@angular/core';
@@ -12,7 +12,9 @@ export class CartDataService {
     public data!: Card
     public dataTable: Array<Card> =[];
     public dataTableProd: Array<Producto> =[];
+    public dataTableProd$: Subject<number> = new Subject();
     resultado: number =0;
+    cantArticulos: number=0;
 
     public obtenerDatos(card: Card){
         const existePord = this.dataTableProd.find(product => product.nombre === card.producto);
@@ -41,14 +43,22 @@ export class CartDataService {
 
     public obtenerResultado(): number{
       let total = 0;
+      this.cantArticulos=0;
       this.dataTableProd.forEach(product => {
-      total= total + (product.cantidad*product.precio)
+        total= total + (product.cantidad*product.precio)
+        this.cantArticulos=this.cantArticulos+product.cantidad;
        });
+
+       this.dataTableProd$.next(this.cantArticulos);
        return total
    }
 
    public enviarResultado(): number{
      return this.resultado
+   }
+
+   public getAllProductsToCart(): Observable<number>{
+     return this.dataTableProd$.asObservable();
    }
 
 }

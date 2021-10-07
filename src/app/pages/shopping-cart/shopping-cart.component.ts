@@ -10,7 +10,7 @@ import { PedidoWeb } from './../../models/pedido-web';
 @Component({
   selector: 'app-shopping-cart',
   template: `
-    <mat-card style="box-shadow: none">
+    <mat-card style="box-shadow: none; margin-top: 56px">
       <mat-card>
           <mat-card-header class="flex justify-center pt-8" >
               <mat-card-title *ngIf="datosDeTabla.length!==0"class="w-100" >Orden de compra</mat-card-title>

@@ -1,9 +1,10 @@
 import { Router } from '@angular/router';
 import { MaterialModule } from './../../material/material.module';
 import { CommonModule } from '@angular/common';
-import { Component, NgModule, OnInit } from '@angular/core';
+import { Component, NgModule, OnInit, OnChanges } from '@angular/core';
 import data from 'src/assets/products.json';
 import {CartDataService} from 'src/app/services/cart-data.service'
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-toolbar',
@@ -24,7 +25,7 @@ import {CartDataService} from 'src/app/services/cart-data.service'
              <mat-icon>photo_camera</mat-icon>
           </a>
           <button mat-icon-button routerLink="/shopping-cart">
-             <mat-icon>shopping_cart</mat-icon>
+             <mat-icon matBadge={{cantidadArticulos}} matBadgeColor="warn" matBadgeSize="small">shopping_cart</mat-icon>
           </button>
         </div>
       </mat-toolbar-row>
@@ -42,6 +43,7 @@ export class ToolbarComponent implements OnInit{
   public nombreDeEmpresa!: string; 
   public linkFacebook!: string;
   public linkInstagram!: string;
+  public cantidadArticulos!: number
 
   constructor(private cartService: CartDataService,private  router: Router ){}
 
@@ -52,7 +54,16 @@ export class ToolbarComponent implements OnInit{
     this.nombreDeEmpresa = data.datos[0].nombreEmpresa;
     this.linkFacebook = data.datos[0].facebook;
     this.linkInstagram = data.datos[0].instagram;
+    this.obtenerCantidad();
   }
+
+  obtenerCantidad(){
+    this.cartService.getAllProductsToCart().subscribe(cantidad =>{
+      this.cantidadArticulos=cantidad
+    
+  })
+  }
+
 }
 
 @NgModule({
