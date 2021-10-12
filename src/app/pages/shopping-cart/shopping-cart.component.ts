@@ -22,7 +22,7 @@ import { PedidoWeb } from './../../models/pedido-web';
            <mat-card class="flex flex-row py-0">
              <mat-card-content class="flex flex-row justify-between w-100 mt-16 mb-0" >
                 <p>{{prod.cantidad }}     {{prod.nombre |uppercase}}</p>
-                <span>{{prod.total |currency}}</span>
+                <span>{{ prod.total |currency}}</span>
             </mat-card-content>
             <mat-card-actions>
               <button mat-button (click)="eliminarItems(prod.nombre)">
