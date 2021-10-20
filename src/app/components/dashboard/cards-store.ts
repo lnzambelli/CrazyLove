@@ -10,7 +10,7 @@ export class CardsStore extends Store<Card[]>{
     this.setState([]);
   }
 
-  public add(producto: string, imagen: string, precio: string) {
-    this.setState([...this.state, new Card(producto, imagen, precio)]);
+  public add(producto: string, imagen: string, precio: string, fragancias: string[]) {
+    this.setState([...this.state, new Card(producto, imagen, precio, fragancias)]);
   }
 }

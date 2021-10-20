@@ -6,7 +6,7 @@ export interface Productos {
 }
 
 export class Producto {
-    constructor(public nombre: string, public precio: number, public cantidad: number, public total?: number) {
+    constructor(public nombre: string, public precio: number, public cantidad: number,  public total: number) {
         this.nombre=nombre;
         this.precio=precio;
         this.cantidad=cantidad;

@@ -9,11 +9,11 @@ import { CardsStore } from './card-catalogo-store';
       <mat-chip color="primary" selected class="flex justify-center py-8" style="width: 50%; border-radius: 10px 100px / 120px;max-width: 250px">{{titulo | uppercase}}</mat-chip>
       </div>
       <nav class="flex flex-wrap justify-evenly flex-1">
-        <mat-card class="example-card mt-8" style="max-width: 250px" *ngFor="let card of cardsStore.state$ | async">
+        <mat-card class="example-card mt-8" style="max-width: 280px; " *ngFor="let card of cardsStore.state$ | async">
            <mat-card-header class="">
              <mat-card-title >{{card.marca}}</mat-card-title>
             </mat-card-header>
-           <img mat-card-image [src]="card.imagen" alt="catalogo" class="mb-0">
+           <img mat-card-image [src]="card.imagen" alt="catalogo" class="mb-0 img-formato" >
            <mat-card-actions class="flex justify-around">
                <button mat-button color="primary" [routerLink]="card.url" style="">{{card.titulo}}</button>
             </mat-card-actions>

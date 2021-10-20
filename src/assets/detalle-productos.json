@@ -1,0 +1,48 @@
+{
+    "Saphirus": [
+        {
+           "producto": "Difusores",
+           "imagen": "https://material.angular.io/assets/img/examples/shiba2.jpg",
+           "precio": "320",
+           "fragancias": ["frag1", "frag2"]
+        },
+        {
+            "producto": "Aerosoles",
+            "imagen": "https://material.angular.io/assets/img/examples/shiba2.jpg",
+            "precio": "310",
+            "fragancias": ["frag11", "frag22"]
+        },
+        {
+            "producto": "Caritas",
+            "imagen": "https://material.angular.io/assets/img/examples/shiba2.jpg",
+            "precio": "310",
+            "fragancias": [""]
+        }
+    ],
+    "Jibre": [
+        {
+          "producto": "Remeras",
+          "imagen": "https://material.angular.io/assets/img/examples/shiba2.jpg",
+          "precio": "230",
+          "fragancias": [""]
+        }   
+    ],
+
+    "Promociones": [
+        {
+          "producto": "Combo Aerosol + Textil",
+          "imagen": "https://material.angular.io/assets/img/examples/shiba2.jpg",
+          "precio": "510",
+          "fragancias": ["fg12","fg13"]
+        } 
+    ],
+    "Regalos": [
+        {
+          "producto": "Regalos especial",
+          "imagen": "https://material.angular.io/assets/img/examples/shiba2.jpg",
+          "precio": "610",
+          "fragancias": [""]
+        } 
+    ]
+}
+

@@ -25,7 +25,7 @@ import { Observable } from 'rxjs';
              <mat-icon>photo_camera</mat-icon>
           </a>
           <button mat-icon-button routerLink="/shopping-cart">
-             <mat-icon matBadge={{cantidadArticulos}} matBadgeColor="warn" matBadgeSize="small">shopping_cart</mat-icon>
+             <mat-icon matBadge={{cantidadArticulos}} matBadgeColor="accent" matBadgeSize="small">shopping_cart</mat-icon>
           </button>
         </div>
       </mat-toolbar-row>

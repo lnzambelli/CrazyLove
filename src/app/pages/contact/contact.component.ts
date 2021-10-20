@@ -7,7 +7,7 @@ import data from 'src/assets/products.json'
 @Component({
   selector: 'app-contact',
   template: `
-    <mat-card  >
+    <mat-card>
       <app-addres-form ></app-addres-form>
       <app-card-contact [contactoWhatsapp]="contactoWhatsapp"[contactoCorreo]="contactoCorreo" ></app-card-contact>
     </mat-card>

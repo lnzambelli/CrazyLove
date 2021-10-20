@@ -21,8 +21,8 @@ import { PedidoWeb } from './../../models/pedido-web';
         <mat-card-content *ngFor="let prod of datosDeTabla" value="prod.nombre" class="mb-8">
            <mat-card class="flex flex-row py-0">
              <mat-card-content class="flex flex-row justify-between w-100 mt-16 mb-0" >
-                <p>{{prod.cantidad }}     {{prod.nombre |uppercase}}</p>
-                <span>{{ prod.total |currency}}</span>
+                <p>{{prod.cantidad }}     {{prod.nombre |uppercase }} </p>
+                <strong><span>{{prod.total |currency}}</span></strong>
             </mat-card-content>
             <mat-card-actions>
               <button mat-button (click)="eliminarItems(prod.nombre)">

@@ -1,41 +1,9 @@
 {
-    "cards": [
-      {
-        "producto": "Difusor Flores Blancas",
-        "imagen": "https://material.angular.io/assets/img/examples/shiba2.jpg",
-        "precio": "320"
-      },
-      {
-        "producto": "Aerosol Hawai",
-        "imagen": "https://material.angular.io/assets/img/examples/shiba2.jpg",
-        "precio": "310"
-      },
-      {
-        "producto": "Home Spray Breeze",
-        "imagen": "https://material.angular.io/assets/img/examples/shiba2.jpg",
-        "precio": "450"
-      },
-      {
-        "producto": "Textil Lola",
-        "imagen": "https://material.angular.io/assets/img/examples/shiba2.jpg",
-        "precio": "230"
-      },
-      {
-        "producto": "Paquete Sahumerios x10",
-        "imagen": "https://material.angular.io/assets/img/examples/shiba2.jpg",
-        "precio": "100"
-      },
-      {
-        "producto": "Bombitas Defumación Palo Santo x4",
-        "imagen": "https://material.angular.io/assets/img/examples/shiba2.jpg",
-        "precio": "120"
-      }
-    ],
     "datos": [
       {
         "nombreEmpresa": "Crazy Love",
-        "correo": "virgiferrari@hotmail.com",
-        "telefono": "(03492)15213095",
+        "correo": "Ver",
+        "telefono": "Ver",
         "facebook": "https://www.facebook.com/vircrazylove/",
         "instagram": "https://www.instagram.com/invites/contact/?i=1k1avztojlcic&utm_content=3v3y7ea"
       }
@@ -43,39 +11,40 @@
     "catalogo":[
       {
         "marca": "Saphirus",
-        "imagen": "https://material.angular.io/assets/img/examples/shiba2.jpg",
+        "imagen": "assets/CRAZY LOVE/NUESTROS PRODUCTOS/SAPHIRUS/PORTADA.jpg", 
         "titulo": "VER PRODUCTOS",
         "url": "/product"
       },
       {
         "marca": "Tulia",
-        "imagen": "https://material.angular.io/assets/img/examples/shiba2.jpg",
+        "imagen": "assets/CRAZY LOVE/NUESTROS PRODUCTOS/BELLEZA Y CUIDADO/PORTADA.jpg",
+        
         "titulo": "VER PRODUCTOS",
         "url": "/product"
       },
       {
-        "marca": "Jira",
-        "imagen": "https://material.angular.io/assets/img/examples/shiba2.jpg",
+        "marca": "Jibre",
+        "imagen": "assets/CRAZY LOVE/NUESTROS PRODUCTOS/REMERAS JIBRE/PORTADA.jpeg",
         "titulo": "VER PRODUCTOS",
         "url": "/product"
       }
     ],
     "servicios":[
       {
-        "marca": "Entrega a domicilio",
-        "imagen": "https://material.angular.io/assets/img/examples/shiba2.jpg",
+        "marca": "Envios a domicilio",
+        "imagen": "assets/CRAZY LOVE/NUESTROS SERVICIOS/ENVIOS/PORTADA.jpeg",
         "titulo": "",
         "url": ""
       },
       {
-        "marca": "Stock Permanente",
-        "imagen": "https://material.angular.io/assets/img/examples/shiba2.jpg",
+        "marca": "Promociones",
+        "imagen": "assets/CRAZY LOVE/NUESTROS SERVICIOS/PROMOCIONES/PORTADA.png",
         "titulo": "",
         "url": ""
       },
       {
         "marca": "Regalos",
-        "imagen": "https://material.angular.io/assets/img/examples/shiba2.jpg",
+        "imagen": "assets/CRAZY LOVE/NUESTROS SERVICIOS/REGALOS/PORTADA.png",
         "titulo": "",
         "url": ""
       }

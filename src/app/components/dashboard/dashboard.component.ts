@@ -10,11 +10,11 @@ import {DialogHandlerService} from 'src/app/services/dialog-msj/dialog-handler.s
   template: `
   <mat-card style="box-shadow: none" >
     <nav class="flex flex-wrap justify-evenly flex-1 mb-16">
-      <mat-card class="example-card mt-4 pb-0" style="max-width: 250px" *ngFor="let card of cardsStore.state$ | async">
+      <mat-card class="example-card mt-4 pb-0" style="max-width: 280px" *ngFor="let card of cardsStore.state$ | async">
         <mat-card-header class="mb-4">
           <mat-card-title style="font-size: small" >{{card.producto |titlecase}}</mat-card-title>
         </mat-card-header>
-        <img mat-card-image [src]="card.imagen" alt="producto" class="mb-0"  >
+        <img mat-card-image [src]="card.imagen" alt="producto" class="mb-0 img-formato mx-0">
         <mat-card-actions class="flex justify-between pt-0 mb-4">
             <span class="p-8">{{card.precio | currency}} </span>
             <button mat-raised-button (click)="agregarAlCarrito(card)" style="box-shadow: none" class="flex justify-end">
@@ -41,9 +41,22 @@ export class DashboardComponent implements OnChanges {
     this.createCards();
   }
 
-  public agregarAlCarrito(card: CardDto){
-      this.dialog.showConfirmDialog(["Agregado al carrito"])
-      this.cartService.obtenerDatos(card);
+  public async agregarAlCarrito(card: CardDto){
+    if (card.fragancias.length>=0 && card.fragancias[0]!=""){
+      const dialogRef =  this.dialog.seleccionarFragancia(card.fragancias);
+      dialogRef.afterClosed().subscribe(result => {
+        if (result != undefined){
+          this.cartService.obtenerDatos(card, result);
+          this.dialog.showConfirmDialog(["Agregado al carrito"])
+        }else{
+          this.dialog.showErrorDialog("Error: Campo incompleto", ["No selecciono una fragancia"])
+          return
+        }
+      });
+    }else{
+        this.cartService.obtenerDatos(card,"");
+        this.dialog.showConfirmDialog(["Agregado al carrito"])
+    }   
   }
 
   private createCards() {
@@ -53,6 +66,7 @@ export class DashboardComponent implements OnChanges {
         this.cards[card].producto,
         this.cards[card].imagen,
        this.cards[card].precio,
+       this.cards[card].fragancias
       );
     }
   }

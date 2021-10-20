@@ -16,14 +16,15 @@ export class CartDataService {
     resultado: number =0;
     cantArticulos: number=0;
 
-    public obtenerDatos(card: Card){
-        const existePord = this.dataTableProd.find(product => product.nombre === card.producto);
+    public obtenerDatos(card: Card, fragancia: string){
+        let nombreProducto = card.producto+ " "+fragancia
+        const existePord = this.dataTableProd.find(product => product.nombre === nombreProducto);
         if (!existePord) {
-          const prod = new Producto(card.producto, parseInt(card.precio), 1, parseInt(card.precio))
+          const prod = new Producto(nombreProducto, parseInt(card.precio), 1, parseInt(card.precio))
           this.dataTableProd.push(prod)
         }else{
             this.dataTableProd.forEach(function(prod){
-                if (prod.nombre ===card.producto){
+                if (prod.nombre ===nombreProducto){
                   prod.cantidad+=1;
                   prod.total=prod.precio*prod.cantidad;
                 }

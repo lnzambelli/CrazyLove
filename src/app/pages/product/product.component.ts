@@ -1,8 +1,7 @@
 import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
 import { CardDto } from 'src/app/components/dashboard/card';
-import data from 'src/assets/products.json';
-import prod from './products-art.json';
-import detalleProd from './detalle-productos.json'
+
+import detalleProd from '../../../assets/detalle-productos.json'
 
 @Component({
   selector: 'app-product',
@@ -12,21 +11,11 @@ import detalleProd from './detalle-productos.json'
         <mat-label>Seleccionar Categoria</mat-label>
           <mat-select required [(value)]="selected">
             <mat-option *ngFor="let categoria of arrCategorias; index as i" [value]="categoria" >
-              <button mat-button (click)="expandirCategorias=i" class="w-100" style="text-align: initial;">{{categoria}}</button>
-            </mat-option>
-        </mat-select>
-      </mat-form-field>
-
-      <mat-form-field class="w-100">
-        <mat-label>Seleccionar Producto</mat-label>
-          <mat-select required>
-            <mat-option *ngFor="let producto of arrProd[expandirCategorias].prod" [value]="producto">
-              <button mat-button (click)="obtenerCards(producto)" class="w-100" style="text-align: initial;">{{producto}}</button>
+              <button mat-button (click)="obtenerCards(categoria)" class="w-100" style="text-align: initial;">{{categoria}}</button>
             </mat-option>
         </mat-select>
       </mat-form-field>
     </mat-card>
-     
     <app-dashboard [cards]="cards"></app-dashboard >
   `,
    styles: ['button { padding: 4px }'],
@@ -36,22 +25,19 @@ import detalleProd from './detalle-productos.json'
 export class ProductComponent implements OnInit {
 
   public cards!: Array<CardDto>;
-  expandirCategorias: number =0
-  public arrCategorias: string[] = ["Saphirus", "Sahumerios y velas", "Decoracion", "Belleza y cuidado", "Remeras Jibre"]
-  public arrProd!: Array<any>;
+  public arrCategorias: string[] =[]
   public arrProdCat!: any;
-  selected = "Saphirus"
+  public selected = "Saphirus";
 
   constructor() { }
 
   ngOnInit(): void {
-    this.cards = data.cards;
-    this.arrProd = prod.productos;
-    this.arrProdCat =detalleProd
+    this.arrProdCat =detalleProd;
+    this.arrCategorias = Object.keys(this.arrProdCat);
+    this.cards= this.arrProdCat[this.selected]
   }
 
   obtenerCards(categoria: string){
       this.cards = this.arrProdCat[categoria]
   }
-   
 }
