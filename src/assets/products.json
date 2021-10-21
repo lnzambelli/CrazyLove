@@ -10,21 +10,21 @@
     ],
     "catalogo":[
       {
-        "marca": "Saphirus",
-        "imagen": "assets/CRAZY LOVE/NUESTROS PRODUCTOS/SAPHIRUS/PORTADA.jpg", 
-        "titulo": "VER PRODUCTOS",
-        "url": "/product"
-      },
-      {
         "marca": "Tulia",
-        "imagen": "assets/CRAZY LOVE/NUESTROS PRODUCTOS/BELLEZA Y CUIDADO/PORTADA.jpg",
+        "imagen": "assets/img/home/Home-Tulia.jpg",
         
         "titulo": "VER PRODUCTOS",
         "url": "/product"
       },
       {
+        "marca": "Saphirus",
+        "imagen": "assets/img/home/Home-Saphirus3.jpg", 
+        "titulo": "VER PRODUCTOS",
+        "url": "/product"
+      },
+      {
         "marca": "Jibre",
-        "imagen": "assets/CRAZY LOVE/NUESTROS PRODUCTOS/REMERAS JIBRE/PORTADA.jpeg",
+        "imagen": "assets/img/home/Home-Jibre2.jpeg",
         "titulo": "VER PRODUCTOS",
         "url": "/product"
       }
@@ -32,19 +32,19 @@
     "servicios":[
       {
         "marca": "Envios a domicilio",
-        "imagen": "assets/CRAZY LOVE/NUESTROS SERVICIOS/ENVIOS/PORTADA.jpeg",
+        "imagen": "assets/img/home/Home-Delivery.jpeg",
         "titulo": "",
         "url": ""
       },
       {
         "marca": "Promociones",
-        "imagen": "assets/CRAZY LOVE/NUESTROS SERVICIOS/PROMOCIONES/PORTADA.png",
+        "imagen": "assets/img/home/Home-Promociones.jpeg",
         "titulo": "",
         "url": ""
       },
       {
         "marca": "Regalos",
-        "imagen": "assets/CRAZY LOVE/NUESTROS SERVICIOS/REGALOS/PORTADA.png",
+        "imagen": "assets/img/home/Home-Regalos.jpeg",
         "titulo": "",
         "url": ""
       }

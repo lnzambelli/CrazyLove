@@ -10,11 +10,11 @@ import {DialogHandlerService} from 'src/app/services/dialog-msj/dialog-handler.s
         <div class="text-align-center">
             <mat-icon color="primary" >check_circle_outline</mat-icon>
         </div> 
-        <p>Seleccionar fragancia</p>
+        <p>Seleccione una opción</p>
          <mat-form-field appearance="fill">
-            <mat-label>Fragancia</mat-label>
+            <mat-label>Variedad..</mat-label>
             <mat-select disableRipple>
-                <mat-option *ngFor="let text of data.text" (onSelectionChange)="notificarCambios($event, text)" value={{i}>{{text}}</mat-option>
+                <mat-option *ngFor="let text of (data.text).sort()" (onSelectionChange)="notificarCambios($event, text)" value={{i}>{{text}}</mat-option>
             </mat-select>
           </mat-form-field>
       </div>

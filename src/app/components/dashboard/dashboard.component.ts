@@ -49,7 +49,7 @@ export class DashboardComponent implements OnChanges {
           this.cartService.obtenerDatos(card, result);
           this.dialog.showConfirmDialog(["Agregado al carrito"])
         }else{
-          this.dialog.showErrorDialog("Error: Campo incompleto", ["No selecciono una fragancia"])
+          this.dialog.showErrorDialog("Error: Campo incompleto", ["No selecciono ninguna opción"])
           return
         }
       });

@@ -2,47 +2,651 @@
     "Saphirus": [
         {
            "producto": "Difusores",
-           "imagen": "https://material.angular.io/assets/img/examples/shiba2.jpg",
+           "imagen": "https://www.saphirus.com.ar/upload/difusoresAromaticos/amour.png",
            "precio": "320",
-           "fragancias": ["frag1", "frag2"]
+           "fragancias": ["Apple", "Chicle","Coco Vai", "Damasco", "Guaraná", 
+                "Hawai", "Maracuyá", "Melón", "Papaya", "Peras y Flores",
+                "Sweet", "Tropical", "Uva", "Limón Dulce y Vainilla",
+                "Marino", "Oriente", "Cappiccino","Dolce", "Green",
+                "Manzana Canela", "Naranja Pimienta", "París", "Praga",
+                "Bamboo", "Citronella", "Flores Blancas", "Jazmin", "Jazz",
+                "Lavanda", "Lola", "Magnolia y Fresias", "Palo Santo", "Rocio",
+                "Vainilla", "Violetas","Citrus", "Limón", "Linah", "London",
+                "Miel y Limón", "Orange", "Pink", "Verbena", "Amour", "Bebé",
+                "Cony", "Cristóbal", "Flowers", "Indiana", "Mery", "Nina",
+                "Paula", "Tokyo","Patio"
+            ]
+        },
+        {
+            "producto": "Difusores Premium",
+            "imagen": "https://www.saphirus.com.ar/img/productos/P1oCCEa8inRux2QJ7roQFj84plljbCfKHjoGekQz.jpeg",
+            "precio": "680",
+            "fragancias": ["Frutos Patagónicos","Vainilla y Coco", "Canela de Ceylán",
+                "Caramel Jam","Flores Blancas","Jazmin Bouquet","Lavanda y Romero",
+                "Pétalos de Orquídeas","Vainilla Oriental","Lemonn Peel", "Naranja y Limón",
+                "Sweet Baby"
+             ]
         },
         {
             "producto": "Aerosoles",
-            "imagen": "https://material.angular.io/assets/img/examples/shiba2.jpg",
+            "imagen": "https://www.saphirus.com.ar/upload/latas/amour-lata.png",
             "precio": "310",
-            "fragancias": ["frag11", "frag22"]
+            "fragancias": ["Apple", "Chicle","Coco Vai", "Damasco", "Guaraná", 
+                "Hawai", "Coco Maracuyá", "Melón", "Papaya", "Peras y Flores",
+                "Sweet", "Tropical", "Uva", "Limón Dulce y Vainilla",
+                "Marino", "Oriente", "Cappiccino","Dolce", "Green",
+                "Manzana Canela", "Naranja Pimienta", "París", "Praga",
+                "Bamboo", "Citronella", "Flores Blancas", "Jazmin", "Jazz",
+                "Lavanda", "Lola", "Magnolia y Fresias", "Palo Santo", "Rocio",
+                "Vainilla", "Violetas","Citrus", "Limón", "Linah", "London",
+                "Miel y Limón", "Orange", "Pink", "Verbena", "Amour", "Bebé",
+                "Cony", "Cristóbal", "Flowers", "Indiana", "Mery", "Nina",
+                "Paula", "Tokyo","Frutilla","Maracuyá","Mix Tropical","Fantasia",
+                "Antitabaco", "Breeze","Fresh","Rosas","Tilo","Mandarina", "Blue",
+                "Angel","Invicto","Daniel","One Million", "Patio"
+            ]
         },
         {
-            "producto": "Caritas",
+            "producto": "Aerosoles Ambar",
+            "imagen": "https://www.saphirus.com.ar/upload/latas/amour-lata.png",
+            "precio": "230",
+            "fragancias": ["Amour","Antitabaco","Bamboo","Bebé","Chicle","Citrus",
+                "Coco Vai","Cony","Daniel","Flores Blancas","Flowers","Hawai",
+                "Indiana","Invicto","Jazmin","Lavanda","Limón","Linah","Lola",
+                "Magnolia y Fresias","Mery","Orange","Papaya","Patio","Rocio",
+                "Té Verde", "Tokyo","Tropical","Uva","Vainilla"
+            ]
+        },
+        {
+            "producto": "Textiles",
             "imagen": "https://material.angular.io/assets/img/examples/shiba2.jpg",
-            "precio": "310",
+            "precio": "230",
+            "fragancias": ["Apple", "Chicle","Coco Vai", "Bella", "Guaraná", 
+                "Hawai", "Coco Maracuyá", "Man", "Papaya", "Pitanga",
+                "Lady", "Tropical", "Uva", "Limón Dulce y Vainilla",
+                "Marino", "Oriente", "Olimpyc","Duvet", "Green",
+                "Beauty", "Naranja Pimienta","Bamboo", "Flores Blancas", "Jazmin",
+                "Lavanda", "Lola", "Magnolia y Fresias", "Apolo", "Rocio",
+                "Violetas","Citrus", "Limón", "Linah","Pink", "Verbena", "Amour", "Bebé",
+                "Cony", "Cristóbal", "Flowers", "Indiana", "Mery", "Nina",
+                "Paula", "Tokyo","Antitabaco","Rosas", "Blue",
+                "Angel","Invicto","Daniel","One Million", "Patio","Polo","Wanted"
+            ]
+        },
+        {
+            "producto": "Aromatizador Mini",
+            "imagen": "https://material.angular.io/assets/img/examples/shiba2.jpg",
+            "precio": "190",
+            "fragancias": ["Chicle","Coco Vai", "Bella","Hawai","Papaya","Pitanga",
+                "Tropical", "Uva","Marino", "Oriente", "Olimpyc", "Green",
+                "Bamboo", "Flores Blancas","Lavanda", "Lola", "Magnolia y Fresias",
+                "Rocio","Citrus", "Limón", "Linah","Verbena", "Amour", "Bebé",
+                "Cony","Flowers","Mery","Paula","Angel","Invicto","One Million","Wanted"
+            ]
+        },
+        {
+            "producto": "Home Spray",
+            "imagen": "https://material.angular.io/assets/img/examples/shiba2.jpg",
+            "precio": "480",
+            "fragancias": ["Apple Champagne","Coco Maracuyá","Mix Tropical", 
+                "Sandia Pepino", "Uva y Arandanos", "Vainilla Cream", "Breeze",
+                "Sweet Flowers","Fancy Dreams","Citric Wood", "Lima Limón",
+                "Naranja Pomelo"
+            ]
+        },
+        {
+            "producto": "Equipo Analógico",
+            "imagen": "https://material.angular.io/assets/img/examples/shiba2.jpg",
+            "precio": "950",
             "fragancias": [""]
+        },
+        {
+            "producto": "Aceites Esenciales",
+            "imagen": "https://material.angular.io/assets/img/examples/shiba2.jpg",
+            "precio": "200",
+            "fragancias": ["Coco Vai","Papaya","Amber","Cinamon", "Incienso",
+                "Musk", "Mirra", "Nag Champa","New Delhi","Oriente", "Patchouly",
+                "Vrindavan","Sándalo","Green","Manzana Canela","Naranja Pimienta",
+                "Bamboo", "Citronella","Eucaliptus","Flores Blancas","Jazmin","Lavanda",
+                "Palo Santo","Vainilla","Limón","Linah","Miel y Limón","Orange"
+            ]
+        },
+        {
+            "producto": "Aromatizante para auto Route 66",
+            "imagen": "https://material.angular.io/assets/img/examples/shiba2.jpg",
+            "precio": "190",
+            "fragancias": ["Frutos Rojos", "Manzana", "Tropical","Tutti Frutti",
+                "Marino","Citrico","Naranja", "Polo"
+            ]
+        },
+        {
+            "producto": "Caritas Aromáticas para auto",
+            "imagen": "https://material.angular.io/assets/img/examples/shiba2.jpg",
+            "precio": "280",
+            "fragancias": ["Manzana","Multifruta","Aqua","Lima Limón","Caribe", "Sport"
+            ]
+        },
+        {
+            "producto": "Sensaciones",
+            "imagen": "https://material.angular.io/assets/img/examples/shiba2.jpg",
+            "precio": "250",
+            "fragancias": ["Brisa Marina", "Bosque de Pino", "Floral","Lavanda",
+                "Vainilla", "Citrico","Orange","Aqua Rosé"
+            ]
+        },
+        {
+            "producto": "Latitas",
+            "imagen": "https://material.angular.io/assets/img/examples/shiba2.jpg",
+            "precio": "400",
+            "fragancias": ["Chicle","Coco","Frutos Rojos","Manzana Verde","Uva","Bamboo",
+                "Flores Blancas","Lavanda","Rocio","Vainilla","Limón","Acqua"
+             ]
+        },
+        {
+            "producto": "Air Cool",
+            "imagen": "https://material.angular.io/assets/img/examples/shiba2.jpg",
+            "precio": "280",
+            "fragancias": ["Chicle","Coco","Frutos Rojos","Manzana Verde","Uva","Bamboo",
+                "Flores Blancas","Lavanda","Rocio","Vainilla","Limón","Acqua"
+            ]
         }
+    ],
+    "Milano": [
+        {
+          "producto": "Body Splash",
+          "imagen": "https://material.angular.io/assets/img/examples/shiba2.jpg",
+          "precio": "550",
+          "fragancias": ["Captivant","Flowers","Funny Girl","Miami Summer", 
+                "Pure Seduction","Romantic Venice"
+            ]
+        },
+        {
+            "producto": "Crema Humectante",
+            "imagen": "https://material.angular.io/assets/img/examples/shiba2.jpg",
+            "precio": "500",
+            "fragancias": ["Captivant","Flowers","Funny Girl","Miami Summer", 
+                  "Pure Seduction","Romantic Venice"
+            ]
+        },
+        {
+            "producto": "Agua Micelar",
+            "imagen": "https://material.angular.io/assets/img/examples/shiba2.jpg",
+            "precio": "600",
+            "fragancias": [""]
+        },
+        {
+            "producto": "Jabón Líquido",
+            "imagen": "https://material.angular.io/assets/img/examples/shiba2.jpg",
+            "precio": "270",
+            "fragancias": ["Relax","Damasco","Citrico","Cremoso","Coco","Manzana"]
+        },
+        {
+            "producto": "Perfumes Hombre",
+            "imagen": "https://material.angular.io/assets/img/examples/shiba2.jpg",
+            "precio": "1200",
+            "fragancias": ["Cool Watter - Davidoff","Farenheit - Christian Dior",
+                "Invictus - Paco Rabanne", "One Million - Paco Rabanne",
+                "Polo Classic - Ralph Lauren","Wanted - Azzaro", "Le Male - Jean Paul Gaultier",
+                "Pure XS - Paco Rabanne","Classic - Carolina Herrera"
+            ]
+        },
+        {
+            "producto": "Perfumes Mujer",
+            "imagen": "https://material.angular.io/assets/img/examples/shiba2.jpg",
+            "precio": "1200",
+            "fragancias": ["One - Calvin Klein","Good Girl - Carolina Herrera",
+                "Olympea - Paco Rabanne", "Lady Million - Paco Rabanne",
+                "J adore - Christian Dior","Red Door - Elizabeth Arden", 
+                "Light Blue Fem - Dolce & Gabbana", "La Vie est Belle - Lancome",
+                "Flowers - Kenzo","Chanel Nº5 - Chanel","212 - Carolina Herrera",
+                "Bella - Nina Ricci","Amor Amor - Cacharel","Armani SI - Giorgio Armani",
+                "Pure XS - Paco Rabanne"
+            ]
+        }              
+    ],
+    "Tulia": [
+        {
+          "producto": "Agua Micelar",
+          "imagen": "https://material.angular.io/assets/img/examples/shiba2.jpg",
+          "precio": "380",
+          "fragancias": [""]
+        },
+        {
+            "producto": "Crema Nutritiva Facial",
+            "imagen": "https://material.angular.io/assets/img/examples/shiba2.jpg",
+            "precio": "420",
+            "fragancias": [""]
+        },
+        {
+            "producto": "Tónico Facial",
+            "imagen": "https://material.angular.io/assets/img/examples/shiba2.jpg",
+            "precio": "420",
+            "fragancias": [""]
+        },
+        {
+            "producto": "Mascarilla Facial",
+            "imagen": "https://material.angular.io/assets/img/examples/shiba2.jpg",
+            "precio": "440",
+            "fragancias": ["Chocolate","Aloe","Hidratante"]
+        },
+        {
+            "producto": "Exfoliante Facial",
+            "imagen": "https://material.angular.io/assets/img/examples/shiba2.jpg",
+            "precio": "300",
+            "fragancias": [""]
+        },
+        {
+            "producto": "Sérum Reafirmante Facial",
+            "imagen": "https://material.angular.io/assets/img/examples/shiba2.jpg",
+            "precio": "450",
+            "fragancias": [""]
+        },
+        {
+            "producto": "Shampoo Neutro",
+            "imagen": "https://material.angular.io/assets/img/examples/shiba2.jpg",
+            "precio": "360",
+            "fragancias": [""]
+        },
+        {
+            "producto": "Acondicionador Neutro",
+            "imagen": "https://material.angular.io/assets/img/examples/shiba2.jpg",
+            "precio": "360",
+            "fragancias": [""]
+        },
+        {
+            "producto": "Crema Para Peinar",
+            "imagen": "https://material.angular.io/assets/img/examples/shiba2.jpg",
+            "precio": "420",
+            "fragancias": [""]
+        },
+        {
+            "producto": "Colágeno Labial",
+            "imagen": "https://material.angular.io/assets/img/examples/shiba2.jpg",
+            "precio": "190",
+            "fragancias": [""]
+        },
+        {
+            "producto": "Pulpito Exfoliante",
+            "imagen": "https://material.angular.io/assets/img/examples/shiba2.jpg",
+            "precio": "450",
+            "fragancias": [""]
+        },
+        {
+            "producto": "Máquina Foreó",
+            "imagen": "https://material.angular.io/assets/img/examples/shiba2.jpg",
+            "precio": "1300",
+            "fragancias": [""]
+        },
+        {
+            "producto": "Vincha Peluche",
+            "imagen": "https://material.angular.io/assets/img/examples/shiba2.jpg",
+            "precio": "570",
+            "fragancias": [""]
+        },
+        {
+            "producto": "Pincel Aplicador y Exfoliante",
+            "imagen": "https://material.angular.io/assets/img/examples/shiba2.jpg",
+            "precio": "420",
+            "fragancias": [""]
+        },
+        {
+            "producto": "Combo Pad y Vincha para limpieza",
+            "imagen": "https://material.angular.io/assets/img/examples/shiba2.jpg",
+            "precio": "550",
+            "fragancias": [""]
+        },
+        {
+            "producto": "Pad Reutilzable",
+            "imagen": "https://material.angular.io/assets/img/examples/shiba2.jpg",
+            "precio": "120",
+            "fragancias": [""]
+        }                      
+    ],
+    "Decoración": [
+        {
+          "producto": "Budha 13cm",
+          "imagen": "https://material.angular.io/assets/img/examples/shiba2.jpg",
+          "precio": "590",
+          "fragancias": ["Rosa","Blanco","Verde","Rojo","Naranja","Violeta"]
+        },
+        {
+            "producto": "Cuenco Sahumador",
+            "imagen": "https://material.angular.io/assets/img/examples/shiba2.jpg",
+            "precio": "180",
+            "fragancias": [""]
+        },
+        {
+            "producto": "Hornillo",
+            "imagen": "https://material.angular.io/assets/img/examples/shiba2.jpg",
+            "precio": "350",
+            "fragancias": [""]
+        },
+        {
+            "producto": "Portasahumerio Madera",
+            "imagen": "https://material.angular.io/assets/img/examples/shiba2.jpg",
+            "precio": "200",
+            "fragancias": ["Sigue tus sueños", "Simplicidad","Rayado Verde", "Cuadrille"]
+        }      
+    ],
+    "Sahumerios y Velas": [
+        {
+          "producto": "Sahumerios variados x 10",
+          "imagen": "https://material.angular.io/assets/img/examples/shiba2.jpg",
+          "precio": "120",
+          "fragancias": [""]
+        },
+        {
+            "producto": "Sahumerios variados x 20",
+            "imagen": "https://material.angular.io/assets/img/examples/shiba2.jpg",
+            "precio": "200",
+            "fragancias": [""]
+        },
+        {
+            "producto": "Sahumerios variados x 50",
+            "imagen": "https://material.angular.io/assets/img/examples/shiba2.jpg",
+            "precio": "450",
+            "fragancias": [""]
+        },
+        {
+            "producto": "Bombitas Defumación x 4",
+            "imagen": "https://material.angular.io/assets/img/examples/shiba2.jpg",
+            "precio": "150",
+            "fragancias": ["Atrae Dinero","Defumación Completa", "Destrabe",
+            "7 Hierbas Copal", "7 Poderes","Abre Caminos","Limpieza Energética"
+            ]
+        },
+        {
+            "producto": "Bombitas 7 Chacras",
+            "imagen": "https://material.angular.io/assets/img/examples/shiba2.jpg",
+            "precio": "250",
+            "fragancias": [""]
+        },
+        {
+            "producto": "Palo Santo",
+            "imagen": "https://material.angular.io/assets/img/examples/shiba2.jpg",
+            "precio": "150",
+            "fragancias": [""]
+        },
+        {
+            "producto": "Velas Neutras x 12",
+            "imagen": "https://material.angular.io/assets/img/examples/shiba2.jpg",
+            "precio": "200",
+            "fragancias": ["Blancas","Rojas","Naranjas","Rosas","Azules","Violetas"]
+        },
+        {
+            "producto": "Velas Aromáticas x 12",
+            "imagen": "https://material.angular.io/assets/img/examples/shiba2.jpg",
+            "precio": "300",
+            "fragancias": ["Citronela","Chocolate","Esencias de la India","Frutilla",
+                "Lavanda","Jazmin","Limón","Mango","Maracuyá","Pimpollo de Rosas",
+                "Pomelo Naranja","Vainilla","Violeta"
+            ]
+        }   
     ],
     "Jibre": [
         {
-          "producto": "Remeras",
+          "producto": "Remeras Flores Talle M",
           "imagen": "https://material.angular.io/assets/img/examples/shiba2.jpg",
-          "precio": "230",
+          "precio": "980",
           "fragancias": [""]
-        }   
+        },
+        {
+            "producto": "Remeras Fiesta Talle M",
+            "imagen": "https://material.angular.io/assets/img/examples/shiba2.jpg",
+            "precio": "980",
+            "fragancias": [""]
+        },
+        {
+            "producto": "Remeras Fortaleza Talle M",
+            "imagen": "https://material.angular.io/assets/img/examples/shiba2.jpg",
+            "precio": "1100",
+            "fragancias": [""]
+        },
+        {
+            "producto": "Remeras Estrellas Talle M",
+            "imagen": "https://material.angular.io/assets/img/examples/shiba2.jpg",
+            "precio": "990",
+            "fragancias": [""]
+        },
+        {
+            "producto": "Remeras Corazón Talle M",
+            "imagen": "https://material.angular.io/assets/img/examples/shiba2.jpg",
+            "precio": "990",
+            "fragancias": [""]
+        },
+        {
+            "producto": "Remeras Natural Talle M",
+            "imagen": "https://material.angular.io/assets/img/examples/shiba2.jpg",
+            "precio": "990",
+            "fragancias": [""]
+        },
+        {
+            "producto": "Remeras Love Talle L",
+            "imagen": "https://material.angular.io/assets/img/examples/shiba2.jpg",
+            "precio": "1300",
+            "fragancias": [""]
+        },
+        {
+            "producto": "Remeras Ojos Talle L",
+            "imagen": "https://material.angular.io/assets/img/examples/shiba2.jpg",
+            "precio": "1100",
+            "fragancias": [""]
+        },
+        {
+            "producto": "Remeras Fotografia Talle L",
+            "imagen": "https://material.angular.io/assets/img/examples/shiba2.jpg",
+            "precio": "1100",
+            "fragancias": [""]
+        },
+        {
+            "producto": "Remeras Flores Talle L",
+            "imagen": "https://material.angular.io/assets/img/examples/shiba2.jpg",
+            "precio": "980",
+            "fragancias": [""]
+        },
+        {
+            "producto": "Remeras Mandala Talle L ",
+            "imagen": "https://material.angular.io/assets/img/examples/shiba2.jpg",
+            "precio": "980",
+            "fragancias": [""]
+        },
+        {
+            "producto": "Remeras 3/4 Talle L",
+            "imagen": "https://material.angular.io/assets/img/examples/shiba2.jpg",
+            "precio": "1400",
+            "fragancias": [""]
+        },
+        {
+            "producto": "Remeras Frida Talle L",
+            "imagen": "https://material.angular.io/assets/img/examples/shiba2.jpg",
+            "precio": "950",
+            "fragancias": [""]
+        },
+        {
+            "producto": "Remeras Gatito Talle XL",
+            "imagen": "https://material.angular.io/assets/img/examples/shiba2.jpg",
+            "precio": "950",
+            "fragancias": [""]
+        },
+        {
+            "producto": "Remeras Luna Talle XL",
+            "imagen": "https://material.angular.io/assets/img/examples/shiba2.jpg",
+            "precio": "1500",
+            "fragancias": [""]
+        },
+        {
+            "producto": "Remeras Caricias Talle XL",
+            "imagen": "https://material.angular.io/assets/img/examples/shiba2.jpg",
+            "precio": "980",
+            "fragancias": [""]
+        },
+        {
+            "producto": "Remeras Love Talle XL",
+            "imagen": "https://material.angular.io/assets/img/examples/shiba2.jpg",
+            "precio": "1950",
+            "fragancias": [""]
+        },
+        {
+            "producto": "Remeras Bonjour Talle XL",
+            "imagen": "https://material.angular.io/assets/img/examples/shiba2.jpg",
+            "precio": "1950",
+            "fragancias": [""]
+        },
+        {
+            "producto": "Remeras Love Talle XXL",
+            "imagen": "https://material.angular.io/assets/img/examples/shiba2.jpg",
+            "precio": "1950",
+            "fragancias": [""]
+        },
+        {
+            "producto": "Remeras Bonjour Talle XXL",
+            "imagen": "https://material.angular.io/assets/img/examples/shiba2.jpg",
+            "precio": "1950",
+            "fragancias": [""]
+        },
+        {
+            "producto": "Remeras Rolling Talle XXL",
+            "imagen": "https://material.angular.io/assets/img/examples/shiba2.jpg",
+            "precio": "1100",
+            "fragancias": [""]
+        },
+        {
+            "producto": "Remeras Rosa Talle XXXL",
+            "imagen": "https://material.angular.io/assets/img/examples/shiba2.jpg",
+            "precio": "1500",
+            "fragancias": [""]
+        },
+        {
+            "producto": "Cardigan Mostaza Talle 2",
+            "imagen": "https://material.angular.io/assets/img/examples/shiba2.jpg",
+            "precio": "1900",
+            "fragancias": [""]
+        },
+        {
+            "producto": "Cardigan Gris Talle 4",
+            "imagen": "https://material.angular.io/assets/img/examples/shiba2.jpg",
+            "precio": "1900",
+            "fragancias": [""]
+        },
+        {
+            "producto": "Blazer Negro Talle 3",
+            "imagen": "https://material.angular.io/assets/img/examples/shiba2.jpg",
+            "precio": "4600",
+            "fragancias": [""]
+        },
+        {
+            "producto": "Blazer Natural Talle 4",
+            "imagen": "https://material.angular.io/assets/img/examples/shiba2.jpg",
+            "precio": "4600",
+            "fragancias": [""]
+        },
+        {
+            "producto": "Sweater Rojo Talle 2",
+            "imagen": "https://material.angular.io/assets/img/examples/shiba2.jpg",
+            "precio": "1000",
+            "fragancias": [""]
+        }                                 
     ],
-
     "Promociones": [
         {
           "producto": "Combo Aerosol + Textil",
           "imagen": "https://material.angular.io/assets/img/examples/shiba2.jpg",
           "precio": "510",
-          "fragancias": ["fg12","fg13"]
-        } 
+          "fragancias": ["Chicle", "Cony","Coco Vai","Uva","Linah","Bamboo","Rocio",
+                "Flores Blancas","Hawai","Bebé","Invicto"
+            ]
+        },
+        {
+            "producto": "Combo Difusor + Textil",
+            "imagen": "https://material.angular.io/assets/img/examples/shiba2.jpg",
+            "precio": "520",
+            "fragancias": ["Chicle", "Cony","Coco Vai","Uva","Linah","Bamboo","Rocio",
+                "Flores Blancas","Hawai","Bebé","Invicto"
+            ]
+        },
+        {
+            "producto": "Combo Aerosol + Difusor",
+            "imagen": "https://material.angular.io/assets/img/examples/shiba2.jpg",
+            "precio": "600",
+            "fragancias": ["Chicle", "Cony","Coco Vai","Uva","Linah","Bamboo","Rocio",
+                "Flores Blancas","Hawai","Bebé","Invicto"
+            ]
+        },
+        {
+            "producto": "Combo Esencia + Difusor",
+            "imagen": "https://material.angular.io/assets/img/examples/shiba2.jpg",
+            "precio": "500",
+            "fragancias": ["Coco Vai","Bamboo","Flores Blancas","Palo Santo","Limón",
+                "Vainilla"
+            ]
+        },
+        {
+            "producto": "Combo Aerosol + Difusor + Textil",
+            "imagen": "https://material.angular.io/assets/img/examples/shiba2.jpg",
+            "precio": "850",
+            "fragancias": ["Chicle", "Cony","Coco Vai","Uva","Linah","Bamboo","Rocio",
+                "Flores Blancas","Hawai","Bebé","Invicto"
+            ]
+        },
+        {
+            "producto": "Combo Esencia + Velas Neutras",
+            "imagen": "https://material.angular.io/assets/img/examples/shiba2.jpg",
+            "precio": "350",
+            "fragancias": ["Esencia Limón Vela Amarilla","Esencia Palo Santo Vela Naranja",
+                "Esencia Amber Vela Rosa","Esencia Cinamon Vela Roja","Esencia Vainilla Vela Blanca"
+                ]
+        },
+        {
+            "producto": "Combo Equipo + Aerosol Amber",
+            "imagen": "https://material.angular.io/assets/img/examples/shiba2.jpg",
+            "precio": "1100",
+            "fragancias": ["Limón","Vainilla","Patio"]
+        },
+        {
+            "producto": "Kit Completo: Difusor + Aerosol + Textil + Esencia",
+            "imagen": "https://material.angular.io/assets/img/examples/shiba2.jpg",
+            "precio": "1050",
+            "fragancias": ["Coco Vai","Bamboo","Flores Blancas","Limón"   
+            ]
+        }   
     ],
     "Regalos": [
         {
-          "producto": "Regalos especial",
+          "producto": "Kit de Limpieza Facial",
           "imagen": "https://material.angular.io/assets/img/examples/shiba2.jpg",
-          "precio": "610",
+          "precio": "1400",
           "fragancias": [""]
-        } 
+        },
+        {
+            "producto": "Kit de baño",
+            "imagen": "https://material.angular.io/assets/img/examples/shiba2.jpg",
+            "precio": "1350",
+            "fragancias": [""]
+        },
+        {
+            "producto": "Kit Hogar",
+            "imagen": "https://material.angular.io/assets/img/examples/shiba2.jpg",
+            "precio": "1400",
+            "fragancias": [""]
+        },
+        {
+            "producto": "Kit Milano: Crema y Jabón Liquido",
+            "imagen": "https://material.angular.io/assets/img/examples/shiba2.jpg",
+            "precio": "800",
+            "fragancias": [""]
+        },
+        {
+            "producto": "Kit de Limpieza Energética",
+            "imagen": "https://material.angular.io/assets/img/examples/shiba2.jpg",
+            "precio": "450",
+            "fragancias": [""]
+        },
+        {
+            "producto": "Kit Esfoliante",
+            "imagen": "https://material.angular.io/assets/img/examples/shiba2.jpg",
+            "precio": "1300",
+            "fragancias": [""]
+        }    
     ]
 }
 
