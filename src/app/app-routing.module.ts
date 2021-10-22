@@ -5,6 +5,7 @@ import {ContactComponent} from './pages/contact/contact.component';
 import {ProductComponent} from './pages/product/product.component';
 import {ShoppingCartComponent} from './pages/shopping-cart/shopping-cart.component';
 import { ListOfReceptionsComponent } from './pages/list-of-receptions/list-of-receptions.component';
+import { AuthViewGuard } from './guards/auth-view.guard';
 
 
 const routes: Routes = [
@@ -13,7 +14,7 @@ const routes: Routes = [
   { path: 'product', component: ProductComponent },
   { path: 'contact', component: ContactComponent },
   { path: 'shopping-cart', component: ShoppingCartComponent },
-  { path: 'list-of-receptions', component: ListOfReceptionsComponent},
+  { path: 'list-of-receptions', component: ListOfReceptionsComponent, canActivate: [AuthViewGuard]},
   { path: '**', component: HomeComponent }
 ];
 

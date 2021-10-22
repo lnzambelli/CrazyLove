@@ -7,7 +7,8 @@ import { CartDataService } from 'src/app/services/cart-data.service';
 import { DialogHandlerService } from 'src/app/services/dialog-msj/dialog-handler.service';
 import { FirestoreService } from 'src/app/services/firestore.service';
 import { PedidoWeb } from './../../models/pedido-web';
-import data from '../../../assets/products.json'
+import data from '../../../assets/products.json';
+import {AuthViewListService} from '../../services/auth-view-list.service'
 
 @Component({
   selector: 'app-shopping-cart',
@@ -70,8 +71,8 @@ export class ShoppingCartComponent implements OnInit{
   constructor(private cartService: CartDataService,
               private dialog: DialogHandlerService,
               private firestoreService: FirestoreService,
-              private router: Router
-              ) { 
+              private router: Router,
+              private authtService: AuthViewListService) { 
   }
 
   ngOnInit(){
@@ -91,6 +92,7 @@ export class ShoppingCartComponent implements OnInit{
 
  async enviarPedido(nombreApellido: string, telefono: string){
     if(nombreApellido===this.usuarioOk && telefono===this.telefonoOk){
+      this.authtService.estado$.next(true);
         this.router.navigate(['list-of-receptions'])
     }else{
       if (nombreApellido !=="" || telefono!=="" ){

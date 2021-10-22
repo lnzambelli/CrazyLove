@@ -28,5 +28,5 @@ export class FirestoreService {
   public eliminarMensaje(id: string): Promise<any>{
     return this.firestore.collection('mensajes').doc(id).delete();
   }
-
+  
 }

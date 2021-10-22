@@ -41,7 +41,7 @@ import data from '../../../assets/products.json'
       </mat-card-header>
       <mat-list *ngFor="let mensaje of listMensajes">
         <mat-card>
-          <mat-list-item>De: {{mensaje.firstName}} {{mensaje.address}} </mat-list-item>
+          <mat-list-item>De: {{mensaje.firstName}} ➜ {{mensaje.email}} </mat-list-item>
           <mat-list-item>Mensaje: {{mensaje.mensaje}} </mat-list-item>
           <button mat-button color="primary" class="w-100" (click)="eliminarMensaje(mensaje.id)">Eliminar</button>
         </mat-card>
@@ -94,16 +94,20 @@ export class ListOfReceptionsComponent implements OnInit {
   }
   eliminarMensaje(id: string){
       this.firestore.eliminarMensaje(id).then(()=>{
-          this.dialog.showConfirmDialog(["Registro eliminado"]);
-          this.obtenerMensajes();
+          this.dialog.showConfirmDialog(["Mensaje eliminado"]).afterClosed().subscribe(()=>{
+            this.obtenerMensajes();
+          })
+         
       }, error =>{
           console.log(error)
       })
   }
   eliminarPedido(id: string){
     this.firestore.eliminarPedidos(id).then(()=>{
-      this.dialog.showConfirmDialog(["Registro eliminado"]);
-      this.obtenerPedidosWeb();
+      this.dialog.showConfirmDialog(["Pedido eliminado"]).afterClosed().subscribe(()=>{
+        this.obtenerPedidosWeb();
+      });
+      
       
     }, error =>{
         console.log(error)

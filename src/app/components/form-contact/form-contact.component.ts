@@ -55,7 +55,7 @@ export class AddresFormComponent {
     })
     */
     await this.firestoreService.guardarMensaje(TARJETA,"mensajes").then(()=>{
-        console.log("tarjeta guardada")
+        
     }, error =>{
       console.log(error)
     })
