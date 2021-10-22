@@ -21,7 +21,11 @@ export class AddresFormComponent {
     mensaje:  [""],
   });
 
-  constructor(private fb: FormBuilder, private dialog: DialogHandlerService, private router: Router, private firestoreService: FirestoreService) {}
+  constructor(private fb: FormBuilder, 
+              private dialog: DialogHandlerService, 
+              private router: Router, 
+              private firestoreService: FirestoreService,
+              ) {}
 
   enviarMensaje(){
     if (this.addressForm.valid){
@@ -36,16 +40,21 @@ export class AddresFormComponent {
       });
     }
   }
-
-  crearTarjetaContacto(){
-    const TARJETA: MensajeContacto = {
+  
+  async crearTarjetaContacto(){
+     const TARJETA: MensajeContacto = {
       email: this.addressForm.value.email,
       firstName: this.addressForm.value.firstName,
       address: this.addressForm.value.address,
       city: this.addressForm.value.city,
       mensaje: this.addressForm.value.mensaje
     }
-    this.firestoreService.guardarMensaje(TARJETA,"mensajes").then(()=>{
+    /*
+    await this.mailerService.enviarCorreo(TARJETA,false).then(()=>{
+      console.log("Enviado al correo")
+    })
+    */
+    await this.firestoreService.guardarMensaje(TARJETA,"mensajes").then(()=>{
         console.log("tarjeta guardada")
     }, error =>{
       console.log(error)

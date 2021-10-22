@@ -11,14 +11,16 @@ import detalleProd from '../../../assets/detalle-productos.json'
         <mat-label>Seleccionar Categoria</mat-label>
           <mat-select required [(value)]="selected">
             <mat-option *ngFor="let categoria of arrCategorias; index as i" [value]="categoria" >
-              <button mat-button (click)="obtenerCards(categoria)" class="w-100" style="text-align: initial;">{{categoria}}</button>
+              <button mat-button (click)="obtenerCards(categoria)" class="w-100 p-4" style="text-align: initial;">{{categoria}}</button>
             </mat-option>
         </mat-select>
       </mat-form-field>
     </mat-card>
     <app-dashboard [cards]="cards"></app-dashboard >
+
   `,
    styles: ['button { padding: 4px }'],
+  
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 

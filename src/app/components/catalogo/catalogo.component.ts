@@ -1,4 +1,4 @@
-import {  Component, Input, NgModule,  OnChanges } from '@angular/core';
+import {  ChangeDetectionStrategy, Component, Input, NgModule,  OnChanges } from '@angular/core';
 import { CardDto} from './card-catalogo';
 import { CardsStore } from './card-catalogo-store';
 
@@ -20,6 +20,8 @@ import { CardsStore } from './card-catalogo-store';
        </mat-card>
     </nav>
   `,
+  styles: ['mat-card { box-shadow: none !important }'],
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class CatalogoComponent implements OnChanges {
 

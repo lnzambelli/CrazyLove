@@ -2,10 +2,13 @@
     "datos": [
       {
         "nombreEmpresa": "Crazy Love",
-        "correo": "Ver",
+        "correo": "crazylove.appweb@gmail.com",
         "telefono": "Ver",
         "facebook": "https://www.facebook.com/vircrazylove/",
-        "instagram": "https://www.instagram.com/invites/contact/?i=1k1avztojlcic&utm_content=3v3y7ea"
+        "instagram": "https://www.instagram.com/invites/contact/?i=1k1avztojlcic&utm_content=3v3y7ea",
+        "claveMensajes":"cl2021vir",
+        "usuarioOk": "VirCrazyLove",
+        "telefonoOk": "1992"
       }
     ],
     "catalogo":[
@@ -18,7 +21,7 @@
       },
       {
         "marca": "Saphirus",
-        "imagen": "assets/img/home/Home-Saphirus3.jpg", 
+        "imagen": "assets/img/home/Home-Saphirus.png", 
         "titulo": "VER PRODUCTOS",
         "url": "/product"
       },

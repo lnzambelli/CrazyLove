@@ -1,3 +1,4 @@
+import { Router } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component, NgModule, OnInit} from '@angular/core';
 import { Producto } from 'src/app/components/dashboard/productos';
@@ -6,6 +7,7 @@ import { CartDataService } from 'src/app/services/cart-data.service';
 import { DialogHandlerService } from 'src/app/services/dialog-msj/dialog-handler.service';
 import { FirestoreService } from 'src/app/services/firestore.service';
 import { PedidoWeb } from './../../models/pedido-web';
+import data from '../../../assets/products.json'
 
 @Component({
   selector: 'app-shopping-cart',
@@ -62,16 +64,22 @@ export class ShoppingCartComponent implements OnInit{
   telefono:  string ="";
   arrayProd: string[]= [];
   estadoConexion!: boolean;
+  usuarioOk: string ="";
+  telefonoOk: string =""
   
   constructor(private cartService: CartDataService,
               private dialog: DialogHandlerService,
-              private firestoreService: FirestoreService) { 
+              private firestoreService: FirestoreService,
+              private router: Router
+              ) { 
   }
 
   ngOnInit(){
     this.datosDeTabla = this.cartService.enviarDatoATabla();
     this.resultado = this.cartService.enviarResultado();
     this.estadoConexion = navigator.onLine;
+    this.usuarioOk= data.datos[0].usuarioOk;
+    this.telefonoOk=data.datos[0].telefonoOk;
  }
 
  eliminarItems(nombreProducto: string){
@@ -82,29 +90,40 @@ export class ShoppingCartComponent implements OnInit{
  }
 
  async enviarPedido(nombreApellido: string, telefono: string){
-   if (nombreApellido !=="" || telefono!=="" ){
-      this.datosDeTabla.forEach(prod =>{
-         const articulo = (prod.cantidad+" "+prod.nombre+": $"+prod.total)
-        this.arrayProd.push(articulo)
-      })
-
-      const PEDIDO: PedidoWeb = {
-        nombre: nombreApellido,
-        telefono: telefono,
-        productos: this.arrayProd,
-        precioTotal: this.resultado
-      }
-      
-      await this.firestoreService.guardarMensaje(PEDIDO,"pedidoWeb").then(()=>{
-        this.dialog.showConfirmDialog(["Pedido confirmado..Gracias por su compra!!"]);             
-      }, error =>{
-        console.log(error)
-      })
-      location.reload()
-   
+    if(nombreApellido===this.usuarioOk && telefono===this.telefonoOk){
+        this.router.navigate(['list-of-receptions'])
     }else{
-     this.dialog.showErrorDialog("ERROR: Campos incompletos",[])
-   }
+      if (nombreApellido !=="" || telefono!=="" ){
+        this.datosDeTabla.forEach(prod =>{
+           const articulo = (prod.cantidad+" "+prod.nombre+": $"+prod.total)
+          this.arrayProd.push(articulo)
+        })
+  
+        const PEDIDO: PedidoWeb = {
+          nombre: nombreApellido,
+          telefono: telefono,
+          productos: this.arrayProd,
+          precioTotal: this.resultado
+        }
+        /*
+        await this.mailerService.enviarCorreo(PEDIDO,true).then(()=>{
+            console.log("Enviado al correo")
+        })
+        */
+        await this.firestoreService.guardarMensaje(PEDIDO,"pedidoWeb").then(()=>{
+        
+          this.dialog.showConfirmDialog(["Pedido confirmado..Gracias por su compra!!"]);             
+        }, error =>{
+          console.log(error)
+        })
+        setTimeout(() => {
+          location.reload()
+        }, 2000);
+      }else{
+       this.dialog.showErrorDialog("ERROR: Campos incompletos",[])
+     }
+    }
+   
  }
 }
 

@@ -43,7 +43,8 @@ import { environment } from 'src/environments/environment';
 import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
 import {MatButtonToggleModule} from '@angular/material/button-toggle';
 import {MatTooltipModule} from '@angular/material/tooltip';
-import {SpeedDialComponent} from './components/speed-dial-fabs/speed-dial.component'
+import {SpeedDialComponent} from './components/speed-dial-fabs/speed-dial.component';
+
 
 @NgModule({
   declarations: [
@@ -64,7 +65,7 @@ import {SpeedDialComponent} from './components/speed-dial-fabs/speed-dial.compon
     ErrorDialogComponent,
     AutocompleteFieldComponent,
     SeleccionarFraganciaComponent,
-    SpeedDialComponent
+
   ],
   imports: [
     BrowserModule,

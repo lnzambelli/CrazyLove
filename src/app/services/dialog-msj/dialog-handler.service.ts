@@ -37,7 +37,7 @@ export class DialogHandlerService {
     return this.dialog.open(ConfirmDialogComponent, {
       data: { text: texto },
       position: {  },
-      maxWidth: '600px'
+      maxWidth: '600px',
     });
   }
 
