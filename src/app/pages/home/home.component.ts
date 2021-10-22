@@ -11,7 +11,7 @@ import data from 'src/assets/products.json';
     <app-catalogo [cards]="cards" [titulo]="tituloMarcas"></app-catalogo>
     <app-catalogo [cards]="services" [titulo]="tituloServicios" ></app-catalogo>
     <div class="flex justify-center py-8 m-8">
-      <mat-chip color="primary" selected class="flex justify-center py-8" style="width: 50%; border-radius: 10px 100px / 120px;max-width: 250px">Donde encontrarnos?</mat-chip>
+      <mat-chip color="green" selected class="flex justify-center py-8" style="width: 50%; border-radius: 10px 100px / 120px;max-width: 250px">Donde encontrarnos?</mat-chip>
       </div>
       <nav class="flex flex-wrap justify-evenly flex-1">
         <mat-card class="example-card mt-8 py-0" style="max-width: 100vh">

@@ -8,7 +8,7 @@ import data from '../../../assets/products.json'
 @Component({
   selector: 'app-list-of-receptions',
   template: `
-  <mat-card style="margin-top: 60px">
+  <mat-card style="margin-top: 60px"*ngIf="!claveValida" >
    <form >
       <mat-form-field class="w-100">
           <mat-label>Contraseña</mat-label>
@@ -17,7 +17,7 @@ import data from '../../../assets/products.json'
     </form>
     <button mat-button color="primary" class="w-100" (click)="mostrarNotificaciones(clave.value)">Ver Pedidos</button> 
   </mat-card>
-  <div *ngIf="claveValida">
+  <div style="margin-top: 60px" *ngIf="claveValida">
    <mat-card>
       <mat-card-header class="flex justify-center pt-8" >
           <mat-card-title class="w-100" >PEDIDOS WEB</mat-card-title>
@@ -95,9 +95,7 @@ export class ListOfReceptionsComponent implements OnInit {
   eliminarMensaje(id: string){
       this.firestore.eliminarMensaje(id).then(()=>{
           this.dialog.showConfirmDialog(["Registro eliminado"]);
-          setTimeout(() => {
-            location.reload()
-          }, 2000);
+          this.obtenerMensajes();
       }, error =>{
           console.log(error)
       })
@@ -105,9 +103,7 @@ export class ListOfReceptionsComponent implements OnInit {
   eliminarPedido(id: string){
     this.firestore.eliminarPedidos(id).then(()=>{
       this.dialog.showConfirmDialog(["Registro eliminado"]);
-      setTimeout(() => {
-        location.reload()
-      }, 2000);
+      this.obtenerPedidosWeb();
       
     }, error =>{
         console.log(error)

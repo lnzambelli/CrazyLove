@@ -28,7 +28,7 @@ import data from '../../../assets/products.json'
             </mat-card-content>
             <mat-card-actions>
               <button mat-button (click)="eliminarItems(prod.nombre)">
-                  <mat-icon color="warn">clear</mat-icon>
+                  <mat-icon color="primary">clear</mat-icon>
               </button>
             </mat-card-actions>
           </mat-card>
@@ -112,13 +112,14 @@ export class ShoppingCartComponent implements OnInit{
         */
         await this.firestoreService.guardarMensaje(PEDIDO,"pedidoWeb").then(()=>{
         
-          this.dialog.showConfirmDialog(["Pedido confirmado..Gracias por su compra!!"]);             
+          const dialog = this.dialog.showConfirmDialog(["Pedido confirmado..Gracias por su compra!!"]);
+          dialog.afterClosed().subscribe(()=>{
+            location.reload()
+          })            
         }, error =>{
           console.log(error)
         })
-        setTimeout(() => {
-          location.reload()
-        }, 2000);
+        
       }else{
        this.dialog.showErrorDialog("ERROR: Campos incompletos",[])
      }
