@@ -18,12 +18,12 @@ import data from '../../../assets/products.json'
     <button mat-button color="primary" class="w-100" (click)="mostrarNotificaciones(clave.value)">Ver Pedidos</button> 
   </mat-card>
   <div style="margin-top: 60px" *ngIf="claveValida">
-   <mat-card>
-      <mat-card-header class="flex justify-center pt-8" >
+   <mat-card >
+      <mat-card-header class="flex justify-center pt-8 pb-8" >
           <mat-card-title class="w-100" >PEDIDOS WEB</mat-card-title>
       </mat-card-header>
-      <mat-list *ngFor="let ped of listPedidos">
-        <mat-card>
+      <nav class="flex flex-wrap justify-evenly flex-1 w-100">
+        <mat-card *ngFor="let ped of listPedidos" style="width: 280px" class="mb-16">
           <mat-list-item>De: {{ped.nombre}} ({{ped.telefono}}) </mat-list-item>
           <mat-list-item>Precio: {{ped.precioTotal | currency}} </mat-list-item>
           <mat-list-item>Productos:</mat-list-item>
@@ -32,20 +32,21 @@ import data from '../../../assets/products.json'
           </div>
           <button mat-button color="primary" class="w-100" (click)="eliminarPedido(ped.id)">Eliminar</button>
         </mat-card>
-      </mat-list>
+    </nav>
     </mat-card>
     
     <mat-card>
-      <mat-card-header class="flex justify-center" >
+      <mat-card-header class="flex justify-center pt-8 pb-8" >
           <mat-card-title class="w-100" >MENSAJES WEB</mat-card-title>
       </mat-card-header>
-      <mat-list *ngFor="let mensaje of listMensajes">
-        <mat-card>
-          <mat-list-item>De: {{mensaje.firstName}} ➜ {{mensaje.email}} </mat-list-item>
+      <nav class="flex flex-wrap justify-evenly flex-1 w-100"> 
+        <mat-card *ngFor="let mensaje of listMensajes" style="width: 280px" class="mb-16">
+          <mat-list-item>De: {{mensaje.firstName}} </mat-list-item>
+          <mat-list-item>Email: {{mensaje.email}} </mat-list-item>
           <mat-list-item>Mensaje: {{mensaje.mensaje}} </mat-list-item>
           <button mat-button color="primary" class="w-100" (click)="eliminarMensaje(mensaje.id)">Eliminar</button>
         </mat-card>
-      </mat-list>
+    </nav>
     </mat-card>
   </div>
     `,

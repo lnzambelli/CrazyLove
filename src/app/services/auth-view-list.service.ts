@@ -16,6 +16,6 @@ export class AuthViewListService {
   }
 
   public devolverEstado(){
-    this.estado$.next(this.estado);
+    this.estado$.next(this.estado)
   }
 }

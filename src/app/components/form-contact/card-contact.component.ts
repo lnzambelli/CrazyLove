@@ -5,7 +5,7 @@ import { Component, OnInit, ChangeDetectionStrategy, Input } from '@angular/core
   template: `
     <h2 class="text-align-center">Escribinos..</h2>
     <div class="">
-      <mat-card >
+      <mat-card style="max-width: 400px flex justify-center" >
          <mat-card-header class="flex flex-column align-items-center">
             <div mat-card-avatar class="mb-16">
               <mat-icon style="font-size: 36px;">email</mat-icon>

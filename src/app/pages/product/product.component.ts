@@ -1,6 +1,5 @@
 import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
 import { CardDto } from 'src/app/components/dashboard/card';
-
 import detalleProd from '../../../assets/detalle-productos.json'
 
 @Component({
@@ -42,4 +41,6 @@ export class ProductComponent implements OnInit {
   obtenerCards(categoria: string){
       this.cards = this.arrProdCat[categoria]
   }
+
+  
 }
