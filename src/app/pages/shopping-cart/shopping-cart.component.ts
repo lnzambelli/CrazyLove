@@ -114,7 +114,7 @@ export class ShoppingCartComponent implements OnInit{
         */
         await this.firestoreService.guardarMensaje(PEDIDO,"pedidoWeb").then(()=>{
         
-          const dialog = this.dialog.showConfirmDialog(["Pedido confirmado..Gracias por su compra!!"]);
+          const dialog = this.dialog.showConfirmDialog(["Pedido confirmado con éxito.. Gracias por su compra!!"]);
           dialog.afterClosed().subscribe(()=>{
             location.reload()
           })            

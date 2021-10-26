@@ -7,18 +7,22 @@ import detalleProd from '../../../assets/detalle-productos.json'
   template: `
     <mat-card style="box-shadow: none; margin-top: 56px; " class="pb-0">  
       <mat-form-field class="w-100" >
-        <mat-label>Seleccionar Categoria</mat-label>
+        <mat-label>Seleccionar Categoria</mat-label >
           <mat-select required [(value)]="selected">
             <mat-option *ngFor="let categoria of arrCategorias; index as i" [value]="categoria" >
-              <button mat-button (click)="obtenerCards(categoria)" class="w-100 p-4" style="text-align: initial;">{{categoria}}</button>
+              <button mat-button (click)="obtenerCards(categoria)" class="w-100 p-4" style="text-align: initial; padding: 4px">{{categoria}}</button>
             </mat-option>
         </mat-select>
       </mat-form-field>
     </mat-card>
     <app-dashboard [cards]="cards"></app-dashboard >
-
+    <button mat-mini-fab color="accent" 
+            style="position: fixed;bottom: 30px;right: 0px;z-index: 100;"
+            onclick="window.scrollTo(0,0)">
+        <mat-icon>expand_less</mat-icon>
+    </button>
   `,
-   styles: ['button { padding: 4px }'],
+   styles: ['button {  }'],
   
   changeDetection: ChangeDetectionStrategy.OnPush
 })
@@ -41,6 +45,4 @@ export class ProductComponent implements OnInit {
   obtenerCards(categoria: string){
       this.cards = this.arrProdCat[categoria]
   }
-
-  
 }
