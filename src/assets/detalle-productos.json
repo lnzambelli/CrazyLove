@@ -285,7 +285,7 @@
         },
         {
             "producto": "Máquina Foreó",
-            "imagen": "assets/img/products/tulia-foreo2.png",
+            "imagen": "assets/img/products/tulia-foreo2.jpeg",
             "precio": "1300",
             "fragancias": [""]
         },
@@ -478,7 +478,7 @@
         },
         {
             "producto": "Velas Decorativas 9cm",
-            "imagen": "assets/img/products/deco-velasDeco.png",
+            "imagen": "assets/img/products/deco-velasDeco.jpg",
             "precio": "250",
             "fragancias": ["Budha","Ganesh"]
         }
@@ -659,7 +659,7 @@
         },
         {
             "producto": "Combo Difusor + Textil",
-            "imagen": "assets/img/products/promo-difusor-textil.png",
+            "imagen": "assets/img/products/promo-difusor-textil.jpg",
             "precio": "520",
             "fragancias": ["Chicle", "Cony","Coco Vai","Uva","Linah","Bamboo","Rocio",
                 "Flores Blancas","Hawai","Bebé","Invicto"
@@ -750,7 +750,7 @@
         },
         {
             "producto": "Kit Sagrada Madre",
-            "imagen": "assets/img/products/kit-sagrada-madre.png",
+            "imagen": "assets/img/products/kit-sagrada-madre.jpg",
             "precio": "950",
             "fragancias": [""]
         }       
