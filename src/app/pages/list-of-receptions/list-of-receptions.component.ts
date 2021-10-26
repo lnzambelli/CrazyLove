@@ -48,6 +48,7 @@ import data from '../../../assets/products.json'
         </mat-card>
     </nav>
     </mat-card>
+    
   </div>
     `,
   styles: ['mat-list-item {font-size: small !important }'],

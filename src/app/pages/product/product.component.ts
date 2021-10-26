@@ -16,11 +16,7 @@ import detalleProd from '../../../assets/detalle-productos.json'
       </mat-form-field>
     </mat-card>
     <app-dashboard [cards]="cards"></app-dashboard >
-    <button mat-mini-fab color="accent" 
-            style="position: fixed;bottom: 30px;right: 0px;z-index: 100;"
-            onclick="window.scrollTo(0,0)">
-        <mat-icon>expand_less</mat-icon>
-    </button>
+ 
   `,
    styles: ['button {  }'],
   
