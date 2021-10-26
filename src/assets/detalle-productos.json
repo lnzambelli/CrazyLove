@@ -640,13 +640,7 @@
             "imagen": "assets/img/products/Blazer Natural Talle 4.jpeg",
             "precio": "4600",
             "fragancias": [""]
-        },
-        {
-            "producto": "Sweater Rojo Talle 2",
-            "imagen": "assets/img/products/Sweater Rojo Talle 2.jpeg",
-            "precio": "1000",
-            "fragancias": [""]
-        }                                 
+        }                                   
     ],
     "Promociones": [
         {
