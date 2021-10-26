@@ -486,164 +486,164 @@
     ],
     "Jibre": [
         {
-          "producto": "Remeras Flores Talle M",
-          "imagen": "https://material.angular.io/assets/img/examples/shiba2.jpg",
+          "producto": "Remeras MC Flores Talle M",
+          "imagen": "assets/img/products/Remeras Flores Talle M.jpeg",
           "precio": "980",
           "fragancias": [""]
         },
         {
-            "producto": "Remeras Fiesta Talle M",
-            "imagen": "https://material.angular.io/assets/img/examples/shiba2.jpg",
+            "producto": "Remera MC Fiesta Talle M",
+            "imagen": "assets/img/products/Remeras Fiesta Talle M.jpeg",
             "precio": "980",
             "fragancias": [""]
         },
         {
-            "producto": "Remeras Fortaleza Talle M",
-            "imagen": "https://material.angular.io/assets/img/examples/shiba2.jpg",
+            "producto": "Remera MC Fortaleza Talle M",
+            "imagen": "assets/img/products/Remeras Fortaleza Talle M.jpeg",
             "precio": "1100",
             "fragancias": [""]
         },
         {
-            "producto": "Remeras Estrellas Talle M",
-            "imagen": "https://material.angular.io/assets/img/examples/shiba2.jpg",
+            "producto": "Remera ML Estrellas Talle M",
+            "imagen": "assets/img/products/Remeras Estrellas Talle M.jpeg",
             "precio": "990",
             "fragancias": [""]
         },
         {
-            "producto": "Remeras Corazón Talle M",
-            "imagen": "https://material.angular.io/assets/img/examples/shiba2.jpg",
+            "producto": "Remera ML Corazón Talle M",
+            "imagen": "assets/img/products/Remeras Corazón Talle M.jpeg",
             "precio": "990",
             "fragancias": [""]
         },
         {
-            "producto": "Remeras Natural Talle M",
-            "imagen": "https://material.angular.io/assets/img/examples/shiba2.jpg",
+            "producto": "Remera ML Natural Talle M",
+            "imagen": "assets/img/products/Remeras Natural Talle M.jpeg",
             "precio": "990",
             "fragancias": [""]
         },
         {
-            "producto": "Remeras Love Talle L",
-            "imagen": "https://material.angular.io/assets/img/examples/shiba2.jpg",
+            "producto": "Remera MC Love Talle L",
+            "imagen": "assets/img/products/Remeras Love Talle L.jpeg",
             "precio": "1300",
             "fragancias": [""]
         },
         {
-            "producto": "Remeras Ojos Talle L",
-            "imagen": "https://material.angular.io/assets/img/examples/shiba2.jpg",
+            "producto": "Remera MC Ojos Talle L",
+            "imagen": "assets/img/products/Remeras Ojos Talle L.jpeg",
             "precio": "1100",
             "fragancias": [""]
         },
         {
-            "producto": "Remeras Fotografia Talle L",
-            "imagen": "https://material.angular.io/assets/img/examples/shiba2.jpg",
+            "producto": "Remera MC Fotografia Talle L",
+            "imagen": "assets/img/products/Remeras Fotografia Talle L.jpeg",
             "precio": "1100",
             "fragancias": [""]
         },
         {
-            "producto": "Remeras Flores Talle L",
-            "imagen": "https://material.angular.io/assets/img/examples/shiba2.jpg",
+            "producto": "Remera MC Flores Talle L",
+            "imagen": "assets/img/products/Remeras Flores Talle L.jpeg",
             "precio": "980",
             "fragancias": [""]
         },
         {
-            "producto": "Remeras Mandala Talle L ",
-            "imagen": "https://material.angular.io/assets/img/examples/shiba2.jpg",
+            "producto": "Remera MC Mandala Talle L ",
+            "imagen": "assets/img/products/Remeras Mandala Talle L.jpeg",
             "precio": "980",
             "fragancias": [""]
         },
         {
-            "producto": "Remeras 3/4 Talle L",
-            "imagen": "https://material.angular.io/assets/img/examples/shiba2.jpg",
+            "producto": "Remera 3/4 Talle L",
+            "imagen": "assets/img/products/Remeras 34 Talle L.jpeg",
             "precio": "1400",
             "fragancias": [""]
         },
         {
-            "producto": "Remeras Frida Talle L",
-            "imagen": "https://material.angular.io/assets/img/examples/shiba2.jpg",
+            "producto": "Remera ML Frida Talle L",
+            "imagen": "assets/img/products/Remeras Frida Talle L.jpeg",
             "precio": "950",
             "fragancias": [""]
         },
         {
-            "producto": "Remeras Gatito Talle XL",
-            "imagen": "https://material.angular.io/assets/img/examples/shiba2.jpg",
+            "producto": "Remera ML Gatito Talle XL",
+            "imagen": "assets/img/products/Remeras Gatito Talle XL.jpeg",
             "precio": "950",
             "fragancias": [""]
         },
         {
-            "producto": "Remeras Luna Talle XL",
-            "imagen": "https://material.angular.io/assets/img/examples/shiba2.jpg",
+            "producto": "Remera ML Luna Talle XL",
+            "imagen": "assets/img/products/Remeras Luna Talle XL.jpeg",
             "precio": "1500",
             "fragancias": [""]
         },
         {
-            "producto": "Remeras Caricias Talle XL",
-            "imagen": "https://material.angular.io/assets/img/examples/shiba2.jpg",
+            "producto": "Remera MC Caricias Talle XL",
+            "imagen": "assets/img/products/Remeras Caricias Talle XL.jpeg",
             "precio": "980",
             "fragancias": [""]
         },
         {
-            "producto": "Remeras Love Talle XL",
-            "imagen": "https://material.angular.io/assets/img/examples/shiba2.jpg",
+            "producto": "Remera MC Bonjour Talle XL",
+            "imagen": "assets/img/products/Remeras Bonjour Talle XL.jpeg",
             "precio": "1950",
             "fragancias": [""]
         },
         {
-            "producto": "Remeras Bonjour Talle XL",
-            "imagen": "https://material.angular.io/assets/img/examples/shiba2.jpg",
+            "producto": "Remera MC Love Talle XXL",
+            "imagen": "assets/img/products/Remeras Love Talle XL.jpeg",
             "precio": "1950",
             "fragancias": [""]
         },
         {
-            "producto": "Remeras Love Talle XXL",
-            "imagen": "https://material.angular.io/assets/img/examples/shiba2.jpg",
+            "producto": "Remera MC Bonjour Talle XXL",
+            "imagen": "assets/img/products/Remeras Bonjour Talle XXL.jpeg",
             "precio": "1950",
+            "fragancias": [""]
+        }, 
+        {
+            "producto": "Remera MC FLores Talle XXL",
+            "imagen": "assets/img/products/Remeras Flores Talle XXL.jpeg",
+            "precio": "980",
             "fragancias": [""]
         },
         {
-            "producto": "Remeras Bonjour Talle XXL",
-            "imagen": "https://material.angular.io/assets/img/examples/shiba2.jpg",
-            "precio": "1950",
-            "fragancias": [""]
-        },
-        {
-            "producto": "Remeras Rolling Talle XXL",
-            "imagen": "https://material.angular.io/assets/img/examples/shiba2.jpg",
+            "producto": "Remera MC Rolling Talle XXL",
+            "imagen": "assets/img/products/Remeras Rolling Talle XXL.jpeg",
             "precio": "1100",
             "fragancias": [""]
         },
         {
-            "producto": "Remeras Rosa Talle XXXL",
-            "imagen": "https://material.angular.io/assets/img/examples/shiba2.jpg",
+            "producto": "Remera ML Rosa Talle XXXL",
+            "imagen": "assets/img/products/Remeras Rosa Talle XXXL.jpeg",
             "precio": "1500",
             "fragancias": [""]
         },
         {
             "producto": "Cardigan Mostaza Talle 2",
-            "imagen": "https://material.angular.io/assets/img/examples/shiba2.jpg",
+            "imagen": "assets/img/products/Cardigan Mostaza Talle 2.jpeg",
             "precio": "1900",
             "fragancias": [""]
         },
         {
             "producto": "Cardigan Gris Talle 4",
-            "imagen": "https://material.angular.io/assets/img/examples/shiba2.jpg",
+            "imagen": "assets/img/products/Cardigan Gris Talle 4.jpeg",
             "precio": "1900",
             "fragancias": [""]
         },
         {
             "producto": "Blazer Negro Talle 3",
-            "imagen": "https://material.angular.io/assets/img/examples/shiba2.jpg",
+            "imagen": "assets/img/products/Blazer Negro Talle 3.jpeg",
             "precio": "4600",
             "fragancias": [""]
         },
         {
             "producto": "Blazer Natural Talle 4",
-            "imagen": "https://material.angular.io/assets/img/examples/shiba2.jpg",
+            "imagen": "assets/img/products/Blazer Natural Talle 4.jpeg",
             "precio": "4600",
             "fragancias": [""]
         },
         {
             "producto": "Sweater Rojo Talle 2",
-            "imagen": "https://material.angular.io/assets/img/examples/shiba2.jpg",
+            "imagen": "assets/img/products/Sweater Rojo Talle 2.jpeg",
             "precio": "1000",
             "fragancias": [""]
         }                                 
