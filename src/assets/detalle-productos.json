@@ -9,8 +9,8 @@
                 "Sweet", "Tropical", "Uva", "Limón Dulce y Vainilla",
                 "Marino", "Oriente", "Cappiccino","Dolce", "Green",
                 "Manzana Canela", "Naranja Pimienta", "París", "Praga",
-                "Bamboo", "Citronella", "Flores Blancas", "Jazmin", "Jazz",
-                "Lavanda", "Lola", "Magnolia y Fresias", "Palo Santo", "Rocio",
+                "Bamboo", "Citronella", "Flores Blancas", "jazmín", "Jazz",
+                "Lavanda", "Lola", "Magnolia y Fresias", "Palo Santo", "Rocío",
                 "Vainilla", "Violetas","Citrus", "Limón", "Linah", "London",
                 "Miel y Limón", "Orange", "Pink", "Verbena", "Amour", "Bebé",
                 "Cony", "Cristóbal", "Flowers", "Indiana", "Mery", "Nina",
@@ -22,7 +22,7 @@
             "imagen": "assets/img/products/prod-difusorP.jpeg",
             "precio": "680",
             "fragancias": ["Frutos Patagónicos","Vainilla y Coco", "Canela de Ceylán",
-                "Caramel Jam","Flores Blancas","Jazmin Bouquet","Lavanda y Romero",
+                "Caramel Jam","Flores Blancas","jazmín Bouquet","Lavanda y Romero",
                 "Pétalos de Orquídeas","Vainilla Oriental","Lemonn Peel", "Naranja y Limón",
                 "Sweet Baby"
              ]
@@ -36,12 +36,12 @@
                 "Sweet", "Tropical", "Uva", "Limón Dulce y Vainilla",
                 "Marino", "Oriente", "Cappiccino","Dolce", "Green",
                 "Manzana Canela", "Naranja Pimienta", "París", "Praga",
-                "Bamboo", "Citronella", "Flores Blancas", "Jazmin", "Jazz",
-                "Lavanda", "Lola", "Magnolia y Fresias", "Palo Santo", "Rocio",
+                "Bamboo", "Citronella", "Flores Blancas", "jazmín", "Jazz",
+                "Lavanda", "Lola", "Magnolia y Fresias", "Palo Santo", "Rocío",
                 "Vainilla", "Violetas","Citrus", "Limón", "Linah", "London",
                 "Miel y Limón", "Orange", "Pink", "Verbena", "Amour", "Bebé",
                 "Cony", "Cristóbal", "Flowers", "Indiana", "Mery", "Nina",
-                "Paula", "Tokyo","Frutilla","Maracuyá","Mix Tropical","Fantasia",
+                "Paula", "Tokyo","Frutilla","Maracuyá","Mix Tropical","Fantasía",
                 "Antitabaco", "Breeze","Fresh","Rosas","Tilo","Mandarina", "Blue",
                 "Angel","Invicto","Daniel","One Million", "Patio"
             ]
@@ -52,8 +52,8 @@
             "precio": "230",
             "fragancias": ["Amour","Antitabaco","Bamboo","Bebé","Chicle","Citrus",
                 "Coco Vai","Cony","Daniel","Flores Blancas","Flowers","Hawai",
-                "Indiana","Invicto","Jazmin","Lavanda","Limón","Linah","Lola",
-                "Magnolia y Fresias","Mery","Orange","Papaya","Patio","Rocio",
+                "Indiana","Invicto","jazmín","Lavanda","Limón","Linah","Lola",
+                "Magnolia y Fresias","Mery","Orange","Papaya","Patio","Rocío",
                 "Té Verde", "Tokyo","Tropical","Uva","Vainilla"
             ]
         },
@@ -65,8 +65,8 @@
                 "Hawai", "Coco Maracuyá", "Man", "Papaya", "Pitanga",
                 "Lady", "Tropical", "Uva", "Limón Dulce y Vainilla",
                 "Marino", "Oriente", "Olimpyc","Duvet", "Green",
-                "Beauty", "Naranja Pimienta","Bamboo", "Flores Blancas", "Jazmin",
-                "Lavanda", "Lola", "Magnolia y Fresias", "Apolo", "Rocio",
+                "Beauty", "Naranja Pimienta","Bamboo", "Flores Blancas", "jazmín",
+                "Lavanda", "Lola", "Magnolia y Fresias", "Apolo", "Rocío",
                 "Violetas","Citrus", "Limón", "Linah","Pink", "Verbena", "Amour", "Bebé",
                 "Cony", "Cristóbal", "Flowers", "Indiana", "Mery", "Nina",
                 "Paula", "Tokyo","Antitabaco","Rosas", "Blue",
@@ -80,7 +80,7 @@
             "fragancias": ["Chicle","Coco Vai", "Bella","Hawai","Papaya","Pitanga",
                 "Tropical", "Uva","Marino", "Oriente", "Olimpyc", "Green",
                 "Bamboo", "Flores Blancas","Lavanda", "Lola", "Magnolia y Fresias",
-                "Rocio","Citrus", "Limón", "Linah","Verbena", "Amour", "Bebé",
+                "Rocío","Citrus", "Limón", "Linah","Verbena", "Amour", "Bebé",
                 "Cony","Flowers","Mery","Paula","Angel","Invicto","One Million","Wanted"
             ]
         },
@@ -119,7 +119,7 @@
             "fragancias": ["Coco Vai","Papaya","Amber","Cinamon", "Incienso",
                 "Musk", "Mirra", "Nag Champa","New Delhi","Oriente", "Patchouly",
                 "Vrindavan","Sándalo","Green","Manzana Canela","Naranja Pimienta",
-                "Bamboo", "Citronella","Eucaliptus","Flores Blancas","Jazmin","Lavanda",
+                "Bamboo", "Citronella","Eucaliptus","Flores Blancas","jazmín","Lavanda",
                 "Palo Santo","Vainilla","Limón","Linah","Miel y Limón","Orange"
             ]
         },
@@ -128,7 +128,7 @@
             "imagen": "assets/img/products/prod-route.jpg",
             "precio": "190",
             "fragancias": ["Frutos Rojos", "Manzana", "Tropical","Tutti Frutti",
-                "Marino","Citrico","Naranja", "Polo"
+                "Marino","Cítrico","Naranja", "Polo"
             ]
         },
         {
@@ -143,7 +143,7 @@
             "imagen": "assets/img/products/prod-sensaciones.png",
             "precio": "250",
             "fragancias": ["Brisa Marina", "Bosque de Pino", "Floral","Lavanda",
-                "Vainilla", "Citrico","Orange","Aqua Rosé"
+                "Vainilla", "Cítrico","Orange","Aqua Rosé"
             ]
         },
         {
@@ -151,7 +151,7 @@
             "imagen": "assets/img/products/prod-latita.png",
             "precio": "400",
             "fragancias": ["Chicle","Coco","Frutos Rojos","Manzana Verde","Uva","Bamboo",
-                "Flores Blancas","Lavanda","Rocio","Vainilla","Limón","Acqua"
+                "Flores Blancas","Lavanda","Rocío","Vainilla","Limón","Acqua"
              ]
         },
         {
@@ -159,7 +159,7 @@
             "imagen": "assets/img/products/prod-aircool.jpeg",
             "precio": "280",
             "fragancias": ["Chicle","Coco","Frutos Rojos","Manzana Verde","Uva","Bamboo",
-                "Flores Blancas","Lavanda","Rocio","Vainilla","Limón","Acqua"
+                "Flores Blancas","Lavanda","Rocío","Vainilla","Limón","Acqua"
             ]
         }
     ],
@@ -190,7 +190,7 @@
             "producto": "Jabón Líquido",
             "imagen": "assets/img/products/mil-jabonliq.png",
             "precio": "270",
-            "fragancias": ["Relax","Damasco","Citrico","Cremoso","Coco","Manzana"]
+            "fragancias": ["Relax","Damasco","Cítrico","Cremoso","Coco","Manzana"]
         },
         {
             "producto": "Perfumes Hombre",
@@ -284,7 +284,7 @@
             "fragancias": [""]
         },
         {
-            "producto": "Máquina Foreó",
+            "producto": "Máquina Fóreo",
             "imagen": "assets/img/products/tulia-foreo2.jpeg",
             "precio": "1300",
             "fragancias": [""]
@@ -331,7 +331,7 @@
             "producto": "Cuenco Sahumador",
             "imagen": "assets/img/products/deco-cuenco.jpg",
             "precio": "180",
-            "fragancias": [""]
+            "fragancias": ["Blanco","Negro"]
         },
         {
             "producto": "Hornillo Pétalos Calados",
@@ -340,7 +340,7 @@
             "fragancias": [""]
         },
         {
-            "producto": "Hornillo Hindu",
+            "producto": "Hornillo Hindú",
             "imagen": "assets/img/products/deco-hornillo-hindu.jpg",
             "precio": "500",
             "fragancias": ["Buda","Ganesh"]
@@ -352,7 +352,7 @@
             "fragancias": ["Blanco","Negro"]
         },
         {
-            "producto": "Porta sahumerio Sky Plastico",
+            "producto": "Porta sahumerio Sky Plástico",
             "imagen": "assets/img/products/deco-portasahumeriosP.jpg",
             "precio": "150",
             "fragancias": ["Rosa","Blanco","Amarillo","Violeta","Rojo","Negro",
@@ -431,7 +431,7 @@
             "imagen": "assets/img/products/deco-sahumeriocono.jpg",
             "precio": "100",
             "fragancias": ["Champa","Energia Limpia","Esencias de la India","Frutilla",
-                "Lavanda","Mango","Mil Flores","Palo Santo","Jazmin","Rosa",
+                "Lavanda","Mango","Mil Flores","Palo Santo","jazmín","Rosa",
                 "Sándalo","Vainilla"]
         },
         {
@@ -465,7 +465,7 @@
             "imagen": "assets/img/products/deco-velasaromat.jpg",
             "precio": "300",
             "fragancias": ["Citronela","Chocolate","Esencias de la India","Frutilla",
-                "Lavanda","Jazmin","Limón","Mango","Maracuyá","Pimpollo de Rosas",
+                "Lavanda","jazmín","Limón","Mango","Maracuyá","Pimpollo de Rosas",
                 "Pomelo Naranja","Vainilla","Violeta"
             ]
         },
@@ -473,7 +473,7 @@
             "producto": "Velas de Soja x 150grs.",
             "imagen": "assets/img/products/deco-velaSoja.jpg",
             "precio": "500",
-            "fragancias": ["Jazmin","Jazmin Bamboo","Coco","Mango Maracuya","Sándalo",
+            "fragancias": ["jazmín","jazmín Bamboo","Coco","Mango Maracuyá","Sándalo",
                 "Palo Santo","Vainilla"]
         },
         {
@@ -653,7 +653,7 @@
           "producto": "Combo Aerosol + Textil",
           "imagen": "assets/img/products/promo-textil-aerosol.png",
           "precio": "510",
-          "fragancias": ["Chicle", "Cony","Coco Vai","Uva","Linah","Bamboo","Rocio",
+          "fragancias": ["Chicle", "Cony","Coco Vai","Uva","Linah","Bamboo","Rocío",
                 "Flores Blancas","Hawai","Bebé","Invicto"
             ]
         },
@@ -661,7 +661,7 @@
             "producto": "Combo Difusor + Textil",
             "imagen": "assets/img/products/promo-difusor-textil.jpg",
             "precio": "520",
-            "fragancias": ["Chicle", "Cony","Coco Vai","Uva","Linah","Bamboo","Rocio",
+            "fragancias": ["Chicle", "Cony","Coco Vai","Uva","Linah","Bamboo","Rocío",
                 "Flores Blancas","Hawai","Bebé","Invicto"
             ]
         },
@@ -669,7 +669,7 @@
             "producto": "Combo Aerosol + Difusor",
             "imagen": "assets/img/products/promo-aerosol-difusor.png",
             "precio": "600",
-            "fragancias": ["Chicle", "Cony","Coco Vai","Uva","Linah","Bamboo","Rocio",
+            "fragancias": ["Chicle", "Cony","Coco Vai","Uva","Linah","Bamboo","Rocío",
                 "Flores Blancas","Hawai","Bebé","Invicto"
             ]
         },
@@ -685,7 +685,7 @@
             "producto": "Combo Aerosol + Difusor + Textil",
             "imagen": "assets/img/products/promo-difusor-textil-aerosol.png",
             "precio": "850",
-            "fragancias": ["Chicle", "Cony","Coco Vai","Uva","Linah","Bamboo","Rocio",
+            "fragancias": ["Chicle", "Cony","Coco Vai","Uva","Linah","Bamboo","Rocío",
                 "Flores Blancas","Hawai","Bebé","Invicto"
             ]
         },
