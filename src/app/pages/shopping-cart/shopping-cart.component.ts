@@ -13,11 +13,28 @@ import {AuthViewListService} from '../../services/auth-view-list.service'
 @Component({
   selector: 'app-shopping-cart',
   template: `
-    <mat-card style="box-shadow: none; margin-top: 56px">
+    <mat-card style="box-shadow: none; margin-top: 56px" class="">  
+          <mat-card>
+              <div class="flex justify-between align-items-center">
+                  <h3 class="mb-0"><b>¿Cómo realizar un pedido?</b></h3>
+                  <button mat-icon-button color="primary" (click)="viewMenu()">
+                      <mat-icon *ngIf="!mostrarNota">visibility</mat-icon>
+                      <mat-icon *ngIf="mostrarNota">visibility_off</mat-icon>
+                  </button>
+              </div>
+              <p *ngIf="mostrarNota">
+                  En las 3 rayitas de la barra superior↖️, ingresa a la opción "Productos", elegí una marca/categoría, y luego añadí tus productos favoritos al carrito🛒🤩
+              </p>
+              <p *ngIf="mostrarNota">
+              📩 Inmediatamente cuando llega, tomo tu pedido, lo preparo y me pongo en contacto vía WhatsApp 💬 para coordinar entrega📦🛍️
+              </p>
+          </mat-card>
+    </mat-card>
+    <mat-card style="box-shadow: none;">
       <mat-card>
           <mat-card-header class="flex justify-center pt-8" >
               <mat-card-title *ngIf="datosDeTabla.length!==0"class="w-100" >Orden de compra</mat-card-title>
-              <mat-card-title *ngIf="datosDeTabla.length===0" class="w-100" >Carrito Vacio</mat-card-title>
+              <mat-card-title *ngIf="datosDeTabla.length===0" class="w-100" >Carrito Vacío</mat-card-title>
           </mat-card-header>
        </mat-card>
 
@@ -53,7 +70,8 @@ import {AuthViewListService} from '../../services/auth-view-list.service'
                <button mat-button color="primary" (click)="enviarPedido(nombreApellido.value, telefono.value)" [disabled]="!estadoConexion">Confirmar Pedido</button>
           </mat-card>
           </mat-card-content>
-    </mat-card> 
+    </mat-card>
+    
   `,
   changeDetection: ChangeDetectionStrategy.OnPush
 })
@@ -66,7 +84,8 @@ export class ShoppingCartComponent implements OnInit{
   arrayProd: string[]= [];
   estadoConexion!: boolean;
   usuarioOk: string ="";
-  telefonoOk: string =""
+  telefonoOk: string ="";
+  mostrarNota: boolean = false;
   
   constructor(private cartService: CartDataService,
               private dialog: DialogHandlerService,
@@ -88,6 +107,10 @@ export class ShoppingCartComponent implements OnInit{
     this.datosDeTabla = this.datosDeTabla.filter(prod => prod.nombre !== nombreProducto);
     this.cartService.actualizarTabla(nombreProducto);
     this.resultado = this.cartService.enviarResultado();
+ }
+
+ viewMenu(){
+   this.mostrarNota=!this.mostrarNota;
  }
 
  async enviarPedido(nombreApellido: string, telefono: string){
@@ -123,7 +146,7 @@ export class ShoppingCartComponent implements OnInit{
         })
         
       }else{
-       this.dialog.showErrorDialog("ERROR: Campos incompletos",[])
+       this.dialog.showErrorDialog("ERROR: Existen campos sin completar",[])
      }
     }
    
