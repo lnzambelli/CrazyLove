@@ -3,7 +3,7 @@
         {
            "producto": "Difusores",
            "imagen": "assets/img/products/prod-difusor.png",
-           "precio": "320",
+           "precio": "350",
            "fragancias": ["Apple", "Chicle","Coco Vai", "Damasco", "Guaraná", 
                 "Hawai", "Maracuyá", "Melón", "Papaya", "Peras y Flores",
                 "Sweet", "Tropical", "Uva", "Limón Dulce y Vainilla",
@@ -20,7 +20,7 @@
         {
             "producto": "Difusores Premium",
             "imagen": "assets/img/products/prod-difusorP.jpeg",
-            "precio": "680",
+            "precio": "730",
             "fragancias": ["Frutos Patagónicos","Vainilla y Coco", "Canela de Ceylán",
                 "Caramel Jam","Flores Blancas","jazmín Bouquet","Lavanda y Romero",
                 "Pétalos de Orquídeas","Vainilla Oriental","Lemonn Peel", "Naranja y Limón",
@@ -30,7 +30,7 @@
         {
             "producto": "Aerosoles",
             "imagen": "assets/img/products/prod-aromatizante.png",
-            "precio": "310",
+            "precio": "330",
             "fragancias": ["Apple", "Chicle","Coco Vai", "Damasco", "Guaraná", 
                 "Hawai", "Coco Maracuyá", "Melón", "Papaya", "Peras y Flores",
                 "Sweet", "Tropical", "Uva", "Limón Dulce y Vainilla",
@@ -49,7 +49,7 @@
         {
             "producto": "Aerosoles Ambar",
             "imagen": "assets/img/products/prod-ambar2.png",
-            "precio": "230",
+            "precio": "250",
             "fragancias": ["Amour","Antitabaco","Bamboo","Bebé","Chicle","Citrus",
                 "Coco Vai","Cony","Daniel","Flores Blancas","Flowers","Hawai",
                 "Indiana","Invicto","jazmín","Lavanda","Limón","Linah","Lola",
@@ -76,7 +76,7 @@
         {
             "producto": "Aromatizador Mini",
             "imagen": "assets/img/products/prod-mini.png",
-            "precio": "190",
+            "precio": "180",
             "fragancias": ["Chicle","Coco Vai", "Bella","Hawai","Papaya","Pitanga",
                 "Tropical", "Uva","Marino", "Oriente", "Olimpyc", "Green",
                 "Bamboo", "Flores Blancas","Lavanda", "Lola", "Magnolia y Fresias",
@@ -97,25 +97,25 @@
         {
             "producto": "Equipo Analógico",
             "imagen": "assets/img/products/prod-equipos.png",
-            "precio": "950",
+            "precio": "1030",
             "fragancias": [""]
         },
         {
             "producto": "Equipo Digital",
             "imagen": "assets/img/products/prod-equipoD.png",
-            "precio": "1900",
+            "precio": "1950",
             "fragancias": [""]
         },
         {
             "producto": "Pilas AA x 2",
             "imagen": "assets/img/products/prod-pilas.png",
-            "precio": "290",
+            "precio": "350",
             "fragancias": [""]
         },
         {
             "producto": "Aceites Esenciales",
             "imagen": "assets/img/products/prod-aceite.png",
-            "precio": "200",
+            "precio": "210",
             "fragancias": ["Coco Vai","Papaya","Amber","Cinamon", "Incienso",
                 "Musk", "Mirra", "Nag Champa","New Delhi","Oriente", "Patchouly",
                 "Vrindavan","Sándalo","Green","Manzana Canela","Naranja Pimienta",
@@ -126,7 +126,7 @@
         {
             "producto": "Aromatizante para auto Route 66",
             "imagen": "assets/img/products/prod-route.jpg",
-            "precio": "190",
+            "precio": "200",
             "fragancias": ["Frutos Rojos", "Manzana", "Tropical","Tutti Frutti",
                 "Marino","Cítrico","Naranja", "Polo"
             ]
@@ -141,7 +141,7 @@
         {
             "producto": "Sensaciones",
             "imagen": "assets/img/products/prod-sensaciones.png",
-            "precio": "250",
+            "precio": "270",
             "fragancias": ["Brisa Marina", "Bosque de Pino", "Floral","Lavanda",
                 "Vainilla", "Cítrico","Orange","Aqua Rosé"
             ]
@@ -149,7 +149,7 @@
         {
             "producto": "Latitas",
             "imagen": "assets/img/products/prod-latita.png",
-            "precio": "400",
+            "precio": "410",
             "fragancias": ["Chicle","Coco","Frutos Rojos","Manzana Verde","Uva","Bamboo",
                 "Flores Blancas","Lavanda","Rocío","Vainilla","Limón","Acqua"
              ]
@@ -157,7 +157,7 @@
         {
             "producto": "Air Cool",
             "imagen": "assets/img/products/prod-aircool.jpeg",
-            "precio": "280",
+            "precio": "290",
             "fragancias": ["Chicle","Coco","Frutos Rojos","Manzana Verde","Uva","Bamboo",
                 "Flores Blancas","Lavanda","Rocío","Vainilla","Limón","Acqua"
             ]
@@ -405,7 +405,43 @@
             "imagen": "assets/img/products/deco-quemador.png",
             "precio": "360",
             "fragancias": [""]
-        }        
+        },
+        {
+            "producto": "Cascada de Humo energia",
+            "imagen": "assets/img/products/Cascada-humo-energia.jpg",
+            "precio": "650",
+            "fragancias": ["Budha","Ganesh"]
+        },
+        {
+            "producto": "Cascada de Humo Altar",
+            "imagen": "assets/img/products/cascada-humo-altar.jpg",
+            "precio": "650",
+            "fragancias": [ "Plateada", "Dorada"]
+        },
+        {
+            "producto": "Cascada de Humo Sobre Hoja",
+            "imagen": "assets/img/products/Cascada-humo-hojas.jpg",
+            "precio": "990",
+            "fragancias": [ "Negra", "Marrón"]
+        },
+        {
+            "producto": "Cascada de Humo Con Buda",
+            "imagen": "assets/img/products/cascada-humo-conbuda.webp",
+            "precio": "850",
+            "fragancias": [""]
+        },
+        {
+            "producto": "Cascada de Humo Sobre 3 Piedras",
+            "imagen": "assets/img/products/Cascada-humo-3piedras.png",
+            "precio": "1200",
+            "fragancias": [""]
+        },
+        {
+            "producto": "Cascada de Humo Sobre Mano",
+            "imagen": "assets/img/products/Cascada-humo-sobremano.jpg",
+            "precio": "880",
+            "fragancias": [""]
+        }                            
     ],
     "Sahumerios y Velas": [
         {
@@ -451,19 +487,19 @@
         {
             "producto": "Palo Santo",
             "imagen": "assets/img/products/deco-palosanto.jpg",
-            "precio": "150",
+            "precio": "180",
             "fragancias": [""]
         },
         {
             "producto": "Velas Neutras x 12",
             "imagen": "assets/img/products/deco-velasneutras.jpg",
-            "precio": "200",
+            "precio": "210",
             "fragancias": ["Blancas","Rojas","Naranjas","Rosas","Azules","Violetas"]
         },
         {
             "producto": "Velas Aromáticas x 12",
             "imagen": "assets/img/products/deco-velasaromat.jpg",
-            "precio": "300",
+            "precio": "330",
             "fragancias": ["Citronela","Chocolate","Esencias de la India","Frutilla",
                 "Lavanda","jazmín","Limón","Mango","Maracuyá","Pimpollo de Rosas",
                 "Pomelo Naranja","Vainilla","Violeta"
@@ -472,14 +508,14 @@
         {
             "producto": "Velas de Soja x 150grs.",
             "imagen": "assets/img/products/deco-velaSoja.jpg",
-            "precio": "500",
+            "precio": "550",
             "fragancias": ["jazmín","jazmín Bamboo","Coco","Mango Maracuyá","Sándalo",
                 "Palo Santo","Vainilla"]
         },
         {
             "producto": "Velas Decorativas 9cm",
             "imagen": "assets/img/products/deco-velasDeco.jpg",
-            "precio": "250",
+            "precio": "270",
             "fragancias": ["Budha","Ganesh"]
         }
          
@@ -522,12 +558,6 @@
             "fragancias": [""]
         },
         {
-            "producto": "Remera MC Love Talle L",
-            "imagen": "assets/img/products/Remeras Love Talle L.jpeg",
-            "precio": "1300",
-            "fragancias": [""]
-        },
-        {
             "producto": "Remera MC Ojos Talle L",
             "imagen": "assets/img/products/Remeras Ojos Talle L.jpeg",
             "precio": "1100",
@@ -537,12 +567,6 @@
             "producto": "Remera MC Fotografia Talle L",
             "imagen": "assets/img/products/Remeras Fotografia Talle L.jpeg",
             "precio": "1100",
-            "fragancias": [""]
-        },
-        {
-            "producto": "Remera MC Flores Talle L",
-            "imagen": "assets/img/products/Remeras Flores Talle L.jpeg",
-            "precio": "980",
             "fragancias": [""]
         },
         {
@@ -573,18 +597,6 @@
             "producto": "Remera ML Luna Talle XL",
             "imagen": "assets/img/products/Remeras Luna Talle XL.jpeg",
             "precio": "1500",
-            "fragancias": [""]
-        },
-        {
-            "producto": "Remera MC Caricias Talle XL",
-            "imagen": "assets/img/products/Remeras Caricias Talle XL.jpeg",
-            "precio": "980",
-            "fragancias": [""]
-        },
-        {
-            "producto": "Remera MC Bonjour Talle XL",
-            "imagen": "assets/img/products/Remeras Bonjour Talle XL.jpeg",
-            "precio": "1950",
             "fragancias": [""]
         },
         {
@@ -652,7 +664,7 @@
         {
           "producto": "Combo Aerosol + Textil",
           "imagen": "assets/img/products/promo-textil-aerosol.png",
-          "precio": "510",
+          "precio": "550",
           "fragancias": ["Chicle", "Cony","Coco Vai","Uva","Linah","Bamboo","Rocío",
                 "Flores Blancas","Hawai","Bebé","Invicto"
             ]
@@ -660,7 +672,7 @@
         {
             "producto": "Combo Difusor + Textil",
             "imagen": "assets/img/products/promo-difusor-textil.jpg",
-            "precio": "520",
+            "precio": "570",
             "fragancias": ["Chicle", "Cony","Coco Vai","Uva","Linah","Bamboo","Rocío",
                 "Flores Blancas","Hawai","Bebé","Invicto"
             ]
@@ -668,7 +680,7 @@
         {
             "producto": "Combo Aerosol + Difusor",
             "imagen": "assets/img/products/promo-aerosol-difusor.png",
-            "precio": "600",
+            "precio": "650",
             "fragancias": ["Chicle", "Cony","Coco Vai","Uva","Linah","Bamboo","Rocío",
                 "Flores Blancas","Hawai","Bebé","Invicto"
             ]
@@ -676,7 +688,7 @@
         {
             "producto": "Combo Esencia + Difusor",
             "imagen": "assets/img/products/promo-esencia-difusor.png",
-            "precio": "500",
+            "precio": "550",
             "fragancias": ["Coco Vai","Bamboo","Flores Blancas","Palo Santo","Limón",
                 "Vainilla"
             ]
@@ -684,7 +696,7 @@
         {
             "producto": "Combo Aerosol + Difusor + Textil",
             "imagen": "assets/img/products/promo-difusor-textil-aerosol.png",
-            "precio": "850",
+            "precio": "880",
             "fragancias": ["Chicle", "Cony","Coco Vai","Uva","Linah","Bamboo","Rocío",
                 "Flores Blancas","Hawai","Bebé","Invicto"
             ]
@@ -692,7 +704,7 @@
         {
             "producto": "Combo Esencia + Velas Neutras",
             "imagen": "assets/img/products/promo-esencia-velas.png",
-            "precio": "350",
+            "precio": "480",
             "fragancias": ["Esencia Limón Vela Amarilla","Esencia Palo Santo Vela Naranja",
                 "Esencia Amber Vela Rosa","Esencia Cinamon Vela Roja","Esencia Vainilla Vela Blanca"
                 ]
@@ -700,13 +712,13 @@
         {
             "producto": "Combo Equipo + Aerosol Ambar",
             "imagen": "assets/img/products/promo-equipo-ambar.png",
-            "precio": "1100",
+            "precio": "1200",
             "fragancias": ["Limón","Vainilla","Patio"]
         },
         {
             "producto": "Kit Completo",
             "imagen": "assets/img/products/promo-combo.png",
-            "precio": "1050",
+            "precio": "1100",
             "fragancias": ["Coco Vai","Bamboo","Flores Blancas","Limón"   
             ]
         }   
