@@ -116,7 +116,7 @@
             "producto": "Aceites Esenciales",
             "imagen": "assets/img/products/prod-aceite.png",
             "precio": "210",
-            "fragancias": ["Coco Vai","Papaya","Amber","Cinamon", "Incienso",
+            "fragancias": ["Coco Vai","Papaya","Amber","Cinnamon", "Incienso",
                 "Musk", "Mirra", "Nag Champa","New Delhi","Oriente", "Patchouly",
                 "Vrindavan","Sándalo","Green","Manzana Canela","Naranja Pimienta",
                 "Bamboo", "Citronella","Eucaliptus","Flores Blancas","jazmín","Lavanda",
@@ -134,7 +134,7 @@
         {
             "producto": "Caritas Aromáticas para auto",
             "imagen": "assets/img/products/prod-caritass.png",
-            "precio": "280",
+            "precio": "290",
             "fragancias": ["Manzana","Multifruta","Aqua","Lima Limón","Caribe", "Sport"
             ]
         },
@@ -149,7 +149,7 @@
         {
             "producto": "Latitas",
             "imagen": "assets/img/products/prod-latita.png",
-            "precio": "410",
+            "precio": "420",
             "fragancias": ["Chicle","Coco","Frutos Rojos","Manzana Verde","Uva","Bamboo",
                 "Flores Blancas","Lavanda","Rocío","Vainilla","Limón","Acqua"
              ]
@@ -161,13 +161,37 @@
             "fragancias": ["Chicle","Coco","Frutos Rojos","Manzana Verde","Uva","Bamboo",
                 "Flores Blancas","Lavanda","Rocío","Vainilla","Limón","Acqua"
             ]
+        },
+        {
+            "producto": "Hornillo Eléctrico",
+            "imagen": "assets/img/products/hornillo-ele.jpg",
+            "precio": "2200",
+            "fragancias": [""]
+        },
+        {
+            "producto": "Sahumerios Saphirus x 10",
+            "imagen": "assets/img/products/sahumerio-sap.jpg",
+            "precio": "170",
+            "fragancias": ["Amber","Cinnamon","Fancy Bouquet","Franckincense","Musk","Nag Champa","Palo Santo",
+                "Patchouly","Sándalo Madera","Sweet Basil","Vainilla","Vrindavan Flower"
+            ]
+        },
+        {
+            "producto": "Sahumerios Ambar x 10",
+            "imagen": "assets/img/products/sahumerio-amb.jpg",
+            "precio": "110",
+            "fragancias": ["Amber","Benzoin","Canela","Citronella","Coco","Copal","Frutilla","Incienso",
+                "Incienso Mirra", "jazmín","Lavanda","Limón","Mirra", "Musk", "Nag Champa", "Reina de la Noche",
+                "Palo Santo", "Patchouly","Rosa", "Sándalo", "Sándalo Rosa", "Sándalo Canela", "Vainilla",
+                "Violeta"
+            ]
         }
     ],
     "Milano": [
         {
           "producto": "Body Splash",
           "imagen": "assets/img/products/mil-bodysplash.png",
-          "precio": "550",
+          "precio": "580",
           "fragancias": ["Captivant","Flowers","Funny Girl","Miami Summer", 
                 "Pure Seduction","Romantic Venice"
             ]
@@ -183,13 +207,13 @@
         {
             "producto": "Agua Micelar",
             "imagen": "assets/img/products/mil-micelar.png",
-            "precio": "600",
+            "precio": "650",
             "fragancias": [""]
         },
         {
             "producto": "Jabón Líquido",
             "imagen": "assets/img/products/mil-jabonliq.png",
-            "precio": "270",
+            "precio": "280",
             "fragancias": ["Relax","Damasco","Cítrico","Cremoso","Coco","Manzana"]
         },
         {
@@ -220,61 +244,73 @@
         {
           "producto": "Agua Micelar",
           "imagen": "assets/img/products/tulia-aguamicelar.jpeg",
-          "precio": "380",
+          "precio": "400",
           "fragancias": [""]
         },
         {
             "producto": "Crema Nutritiva Facial",
             "imagen": "assets/img/products/tulia-cremanutritiva.jpeg",
-            "precio": "420",
+            "precio": "470",
             "fragancias": [""]
         },
         {
             "producto": "Tónico Facial",
             "imagen": "assets/img/products/tulia-tonicofacial.jpeg",
-            "precio": "420",
+            "precio": "470",
             "fragancias": [""]
         },
         {
             "producto": "Mascarilla Facial",
             "imagen": "assets/img/products/tulia-mascarillafacial.jpeg",
-            "precio": "440",
+            "precio": "480",
             "fragancias": ["Chocolate","Aloe","Hidratante"]
         },
         {
             "producto": "Exfoliante Facial",
             "imagen": "assets/img/products/tulia-esfoliante.jpeg",
-            "precio": "300",
+            "precio": "450",
             "fragancias": [""]
         },
         {
             "producto": "Sérum Reafirmante Facial",
             "imagen": "assets/img/products/tulia-serum.jpeg",
-            "precio": "450",
+            "precio": "500",
             "fragancias": [""]
         },
         {
             "producto": "Shampoo Neutro",
             "imagen": "assets/img/products/tulia-shampo.jpeg",
-            "precio": "360",
+            "precio": "440",
             "fragancias": [""]
         },
         {
             "producto": "Acondicionador Neutro",
             "imagen": "assets/img/products/tulia-acondicionador.jpeg",
-            "precio": "360",
+            "precio": "440",
             "fragancias": [""]
         },
         {
             "producto": "Crema Para Peinar",
             "imagen": "assets/img/products/tulia-cremapeinar.jpeg",
-            "precio": "420",
+            "precio": "470",
+            "fragancias": [""]
+        },
+        {
+            "producto": "Bruma Calmante",
+            "imagen": "assets/img/products/prod-bruma.jpg",
+            "precio": "500",
+            "fragancias": [""]
+        },
+        {
+            "producto": "Desmaquillante",
+            "imagen": "assets/img/products/prod-desmaq.jpg",
+            "precio": "600",
             "fragancias": [""]
         },
         {
             "producto": "Colágeno Labial",
             "imagen": "assets/img/products/tulia-colageno.jpeg",
-            "precio": "190",
+            "precio": "200",
             "fragancias": [""]
         },
         {
@@ -292,65 +328,90 @@
         {
             "producto": "Vincha Peluche",
             "imagen": "assets/img/products/tulia-vinchas.jpeg",
-            "precio": "570",
-            "fragancias": ["Rosa", "Fucxia","Gris"]
+            "precio": "580",
+            "fragancias": ["Rosa-Gris","Gris"]
         },
         {
             "producto": "Pincel Aplicador y Exfoliante",
             "imagen": "assets/img/products/tulia-pincel.jpeg",
-            "precio": "420",
+            "precio": "450",
             "fragancias": ["Rosa", "Fucxia", "Violeta"]
         },
         {
             "producto": "Combo Pad y Vincha para limpieza",
             "imagen": "assets/img/products/tulia-vinchaspad.jpeg",
             "precio": "550",
-            "fragancias": ["Rosa y Blanco","Floreado","Rosa con Estrellas","Celeste con Hojas", "Celeste con Estrellas"]
+            "fragancias": ["Celeste con Estrellas"]
         },
         {
             "producto": "Pad Reutilzable",
             "imagen": "assets/img/products/tulia-pad.jpeg",
             "precio": "120",
             "fragancias": [""]
-        }                      
+        },
+        {
+            "producto": "Balsamo Labial",
+            "imagen": "assets/img/products/balsamos.jpg",
+            "precio": "400",
+            "fragancias": [""]
+        }                           
     ],
     "Decoración": [
         {
           "producto": "Budha 13cm",
           "imagen": "assets/img/products/deco-budha2.jpg",
-          "precio": "590",
+          "precio": "700",
           "fragancias": ["Rosa","Blanco","Verde","Rojo","Naranja","Violeta"]
         },
         {
             "producto": "Budha de la meditación 27cm",
             "imagen": "assets/img/products/deco-meditacion27.jpg",
-            "precio": "1300",
+            "precio": "1400",
             "fragancias": ["Cobre","Plata","Oro"]
           },
         {
             "producto": "Cuenco Sahumador",
             "imagen": "assets/img/products/deco-cuenco.jpg",
-            "precio": "180",
-            "fragancias": ["Blanco","Negro"]
+            "precio": "220",
+            "fragancias": [""]
         },
         {
             "producto": "Hornillo Pétalos Calados",
             "imagen": "assets/img/products/deco-hornillo.jpg",
-            "precio": "350",
+            "precio": "410",
             "fragancias": [""]
         },
         {
             "producto": "Hornillo Hindú",
             "imagen": "assets/img/products/deco-hornillo-hindu.jpg",
-            "precio": "500",
+            "precio": "520",
             "fragancias": ["Buda","Ganesh"]
         },
         {
             "producto": "Hornillo Bolsa Margaritas 10cm",
             "imagen": "assets/img/products/deco-hornillo-margarita10.jpg",
-            "precio": "750",
+            "precio": "980",
             "fragancias": ["Blanco","Negro"]
         },
+        {
+            "producto": "Hornillo Corazón",
+            "imagen": "assets/img/products/hornillo-corazon.jpg",
+            "precio": "780",
+            "fragancias": ["Rojo","Rosa","Blanco"]
+        },
+        {
+            "producto": "Hornillo Rombo",
+            "imagen": "assets/img/products/hornillo-rombos.jpg",
+            "precio": "810",
+            "fragancias": ["Blanco","Gris","Marrón"]
+        },
+        {
+            "producto": "Colgante con Borlas",
+            "imagen": "assets/img/products/colgantes.jpg",
+            "precio": "720",
+            "fragancias": ["Estrella Roja","Corazón","Estrella Verde","Circular"]
+        },
+
         {
             "producto": "Porta sahumerio Sky Plástico",
             "imagen": "assets/img/products/deco-portasahumeriosP.jpg",
@@ -361,43 +422,43 @@
         {
             "producto": "Porta sahumerio Sky Madera",
             "imagen": "assets/img/products/deco-portasahumerio.jpg",
-            "precio": "160",
+            "precio": "180",
             "fragancias": [""]
         },  
         {
-            "producto": "Porta sahumerio Madera",
-            "imagen": "assets/img/products/deco-portasahumerios.jpeg",
+            "producto": "Porta sahumerio Mano de Fátima",
+            "imagen": "assets/img/products/mano-fatima.jpg",
             "precio": "200",
-            "fragancias": ["Sigue tus sueños", "Simplicidad","Rayado Verde", "Cuadrille"]
+            "fragancias": [""]
         },
         {
             "producto": "Lámpara de sal piedra del himalaya",
             "imagen": "assets/img/products/deco-lamp-piedra.jpg",
-            "precio": "2100",
+            "precio": "2700",
             "fragancias": [""]
         },
         {
             "producto": "Lámpara de sal Budha",
             "imagen": "assets/img/products/deco-lamp-buda.jpg",
-            "precio": "2500",
+            "precio": "2700",
             "fragancias": ["No Hablo","No Escucho","No veo"]
         }, 
         {
             "producto": "Lámpara de sal Feng Shui",
             "imagen": "assets/img/products/deco-lamp-fengshui.jpg",
-            "precio": "2500",
+            "precio": "2700",
             "fragancias": ["Cobre","Plata"]
         },
         {
             "producto": "Lámpara de sal Madera",
             "imagen": "assets/img/products/deco-lamp-madera.png",
-            "precio": "1400",
+            "precio": "1800",
             "fragancias": ["Símbolo OM","Mano de Fátima","Árbol de la vida"]
         },
         {
             "producto": "Foco lámpara de sal 5 watts",
             "imagen": "assets/img/products/deco-foco5watts.jpg",
-            "precio": "130",
+            "precio": "140",
             "fragancias": ["Cobre","Plata"]
         },
         {
@@ -421,7 +482,7 @@
         {
             "producto": "Cascada de Humo Sobre Hoja",
             "imagen": "assets/img/products/Cascada-humo-hojas.jpg",
-            "precio": "990",
+            "precio": "1050",
             "fragancias": [ "Negra", "Marrón"]
         },
         {
@@ -487,7 +548,7 @@
         {
             "producto": "Palo Santo",
             "imagen": "assets/img/products/deco-palosanto.jpg",
-            "precio": "180",
+            "precio": "200",
             "fragancias": [""]
         },
         {
@@ -516,27 +577,75 @@
             "producto": "Velas Decorativas 9cm",
             "imagen": "assets/img/products/deco-velasDeco.jpg",
             "precio": "270",
-            "fragancias": ["Budha","Ganesh"]
+            "fragancias": ["Budha","Ganesh","Flor de Loto"]
+        },
+        {
+            "producto": "Velas Mandala",
+            "imagen": "assets/img/products/vela-mandala.jpg",
+            "precio": "610",
+            "fragancias": ["Lavanda Francesa","Jazmín y Bamboo","Vainilla Africana"]
         }
          
     ],
     "Jibre": [
         {
+            "producto": "Remeras MC Magic Talle S",
+            "imagen": "assets/img/products/remera-magic.jpeg",
+            "precio": "1600",
+            "fragancias": [""]
+        },
+        {
+            "producto": "Remeras MC Choose Kidness Talle S",
+            "imagen": "assets/img/products/remera-lila.jpeg",
+            "precio": "990",
+            "fragancias": [""]
+        },
+        {
           "producto": "Remeras MC Flores Talle M",
           "imagen": "assets/img/products/Remeras Flores Talle M.jpeg",
-          "precio": "980",
+          "precio": "990",
           "fragancias": [""]
         },
         {
             "producto": "Remera MC Fiesta Talle M",
             "imagen": "assets/img/products/Remeras Fiesta Talle M.jpeg",
-            "precio": "980",
+            "precio": "990",
             "fragancias": [""]
         },
         {
-            "producto": "Remera MC Fortaleza Talle M",
-            "imagen": "assets/img/products/Remeras Fortaleza Talle M.jpeg",
-            "precio": "1100",
+            "producto": "Remera MC Coral Estrellas Talle M",
+            "imagen": "assets/img/products/remera-coral-est.jpeg",
+            "precio": "1500",
+            "fragancias": [""]
+        },
+        {
+            "producto": "Remera MC Coral Mano Talle M",
+            "imagen": "assets/img/products/remera-coral-mano.jpeg",
+            "precio": "1500",
+            "fragancias": [""]
+        },
+        {
+            "producto": "Remera MC Coral Súper Poder Talle M",
+            "imagen": "assets/img/products/remera-super.jpeg",
+            "precio": "1500",
+            "fragancias": [""]
+        },
+        {
+            "producto": "Remera MC Lima Estrellas Talle M",
+            "imagen": "assets/img/products/remera-lima-est.jpeg",
+            "precio": "1500",
+            "fragancias": [""]
+        },
+        {
+            "producto": "Remera MC Lima Elegir Talle M",
+            "imagen": "assets/img/products/remera-lima-eleg.jpeg",
+            "precio": "1500",
+            "fragancias": [""]
+        },
+        {
+            "producto": "Remera MC Rosa Talle M",
+            "imagen": "assets/img/products/remera-ros.jpeg",
+            "precio": "990",
             "fragancias": [""]
         },
         {
@@ -572,7 +681,7 @@
         {
             "producto": "Remera MC Mandala Talle L ",
             "imagen": "assets/img/products/Remeras Mandala Talle L.jpeg",
-            "precio": "980",
+            "precio": "990",
             "fragancias": [""]
         },
         {
@@ -585,6 +694,18 @@
             "producto": "Remera ML Frida Talle L",
             "imagen": "assets/img/products/Remeras Frida Talle L.jpeg",
             "precio": "950",
+            "fragancias": [""]
+        },
+        {
+            "producto": "Remera MC Moon Talle XL",
+            "imagen": "assets/img/products/remera-bla.jpeg",
+            "precio": "1600",
+            "fragancias": [""]
+        },
+        {
+            "producto": "Remera MC Corazón Talle XL",
+            "imagen": "assets/img/products/remera-coraz.jpeg",
+            "precio": "1600",
             "fragancias": [""]
         },
         {
@@ -611,12 +732,6 @@
             "precio": "1950",
             "fragancias": [""]
         }, 
-        {
-            "producto": "Remera MC FLores Talle XXL",
-            "imagen": "assets/img/products/Remeras Flores Talle XXL.jpeg",
-            "precio": "980",
-            "fragancias": [""]
-        },
         {
             "producto": "Remera MC Rolling Talle XXL",
             "imagen": "assets/img/products/Remeras Rolling Talle XXL.jpeg",
@@ -706,7 +821,7 @@
             "imagen": "assets/img/products/promo-esencia-velas.png",
             "precio": "480",
             "fragancias": ["Esencia Limón Vela Amarilla","Esencia Palo Santo Vela Naranja",
-                "Esencia Amber Vela Rosa","Esencia Cinamon Vela Roja","Esencia Vainilla Vela Blanca"
+                "Esencia Amber Vela Rosa","Esencia Cinnamon Vela Roja","Esencia Vainilla Vela Blanca"
                 ]
         },
         {
@@ -733,13 +848,13 @@
         {
             "producto": "Kit de baño",
             "imagen": "assets/img/products/kit-baño.jpeg",
-            "precio": "1350",
+            "precio": "1500",
             "fragancias": [""]
         },
         {
             "producto": "Kit Hogar",
             "imagen": "assets/img/products/kit-hogar.jpeg",
-            "precio": "1400",
+            "precio": "1500",
             "fragancias": [""]
         },
         {
@@ -755,9 +870,15 @@
             "fragancias": [""]
         },
         {
-            "producto": "Kit Esfoliante",
+            "producto": "Kit Exfoliante",
             "imagen": "assets/img/products/kit-esfoliante.jpeg",
-            "precio": "1300",
+            "precio": "1400",
+            "fragancias": [""]
+        },
+        {
+            "producto": "Kit Facial Completo",
+            "imagen": "assets/img/products/kit-completo.jpeg",
+            "precio": "3500",
             "fragancias": [""]
         },
         {

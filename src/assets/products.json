@@ -14,20 +14,20 @@
     "catalogo":[
       {
         "marca": "Tulia",
-        "imagen": "assets/img/home/Home-Tulia.jpg",
+        "imagen": "assets/img/home/home-tul.jpeg",
         
         "titulo": "VER PRODUCTOS",
         "url": "/product"
       },
       {
         "marca": "Saphirus",
-        "imagen": "assets/img/home/Home-Saphirus.jpg", 
+        "imagen": "assets/img/home/home-sap.jpeg", 
         "titulo": "VER PRODUCTOS",
         "url": "/product"
       },
       {
         "marca": "Jibre",
-        "imagen": "assets/img/home/Home-Jibre2.jpeg",
+        "imagen": "assets/img/home/home-jib.jpeg",
         "titulo": "VER PRODUCTOS",
         "url": "/product"
       }
