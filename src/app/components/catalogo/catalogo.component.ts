@@ -13,7 +13,7 @@ import { CardsStore } from './card-catalogo-store';
            <mat-card-header class="">
              <mat-card-title >{{card.marca}}</mat-card-title>
             </mat-card-header>
-           <img mat-card-image [src]="card.imagen" alt="catalogo" class="mb-0 img-formato" >
+           <img mat-card-image [src]="card.imagen" alt="catalogo" class="mb-0 img-formato1" >
            <mat-card-actions class="flex justify-around">
                <button mat-button color="primary" [routerLink]="card.url" style="">{{card.titulo}}</button>
             </mat-card-actions>
