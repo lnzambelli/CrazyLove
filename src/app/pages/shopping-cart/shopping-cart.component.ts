@@ -1,6 +1,6 @@
 import { Router } from '@angular/router';
 import { CommonModule } from '@angular/common';
-import { ChangeDetectionStrategy, Component, NgModule, OnInit} from '@angular/core';
+import { ChangeDetectionStrategy, Component, NgModule, OnInit, OnChanges } from '@angular/core';
 import { Producto } from 'src/app/components/dashboard/productos';
 import { MaterialModule } from 'src/app/material/material.module';
 import { CartDataService } from 'src/app/services/cart-data.service';
@@ -8,7 +8,8 @@ import { DialogHandlerService } from 'src/app/services/dialog-msj/dialog-handler
 import { FirestoreService } from 'src/app/services/firestore.service';
 import { PedidoWeb } from './../../models/pedido-web';
 import data from '../../../assets/products.json';
-import {AuthViewListService} from '../../services/auth-view-list.service'
+import {AuthViewListService} from '../../services/auth-view-list.service';
+import {MatAutocompleteModule} from '@angular/material/autocomplete';
 
 @Component({
   selector: 'app-shopping-cart',
@@ -67,7 +68,23 @@ import {AuthViewListService} from '../../services/auth-view-list.service'
                     <mat-label>Telefono</mat-label>
                     <input matInput placeholder="Telefono" #telefono>
                </mat-form-field>
-               <button mat-button color="primary" (click)="enviarPedido(nombreApellido.value, telefono.value)" [disabled]="!estadoConexion">Confirmar Pedido</button>
+               <mat-form-field >
+                  <mat-label>Forma de pago</mat-label>
+                      <mat-select #pago>
+                        <mat-option value="efectivo">Efectivo</mat-option>
+                        <mat-option value="transferencia">Transferencia Bancaria</mat-option>
+                        <mat-option value="mercado pago">Mercado Pago</mat-option>
+                    </mat-select>
+                </mat-form-field>
+                <mat-form-field >
+                  <mat-label>Forma de entrega</mat-label>
+                      <mat-select #entrega>
+                        <mat-option value="envio">Enviar a Domicilio</mat-option>
+                        <mat-option value="retiro">Retirar en local</mat-option>
+                    </mat-select>
+                </mat-form-field>
+                
+               <button mat-button color="primary" (click)="enviarPedido(nombreApellido.value, telefono.value, pago.value,entrega.value)" [disabled]="!estadoConexion || confirmoPedido">Confirmar Pedido</button>
           </mat-card>
           </mat-card-content>
     </mat-card>
@@ -85,7 +102,10 @@ export class ShoppingCartComponent implements OnInit{
   estadoConexion!: boolean;
   usuarioOk: string ="";
   telefonoOk: string ="";
+  pago: string ="";
+  confirmoPedido: boolean = false
   mostrarNota: boolean = false;
+ 
   
   constructor(private cartService: CartDataService,
               private dialog: DialogHandlerService,
@@ -113,22 +133,24 @@ export class ShoppingCartComponent implements OnInit{
    this.mostrarNota=!this.mostrarNota;
  }
 
- async enviarPedido(nombreApellido: string, telefono: string){
+ async enviarPedido(nombreApellido: string, telefono: string, pago: string, entrega: string){
     if(nombreApellido===this.usuarioOk && telefono===this.telefonoOk){
       this.authtService.estado$.next(true);
         this.router.navigate(['list-of-receptions'])
     }else{
-      if (nombreApellido !=="" || telefono!=="" ){
+      if (nombreApellido !=="" && telefono!=="" && pago!=="" ){
+        this.confirmoPedido = true;
         this.datosDeTabla.forEach(prod =>{
            const articulo = (prod.cantidad+" "+prod.nombre+": $"+prod.total)
           this.arrayProd.push(articulo)
         })
   
         const PEDIDO: PedidoWeb = {
-          nombre: nombreApellido,
+          nombre: nombreApellido+` (${pago} con ${entrega})`,
           telefono: telefono,
           productos: this.arrayProd,
-          precioTotal: this.resultado
+          precioTotal: this.resultado,
+          
         }
         /*
         await this.mailerService.enviarCorreo(PEDIDO,true).then(()=>{
@@ -157,7 +179,8 @@ export class ShoppingCartComponent implements OnInit{
   declarations: [],
   imports: [
     CommonModule,
-    MaterialModule
+    MaterialModule,
+    MatAutocompleteModule,
   ]
 })
 export class ShoppingCartModule { }
