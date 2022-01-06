@@ -152,6 +152,11 @@
     margin-bottom: 0px !important;
 }
 
+.mx-0 {
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+}
+
 .pt-8 {
     padding-top: 8px !important;
 }
@@ -204,8 +209,8 @@
 }
 
 .img-formato{
-    width: 280px !important;
-    height: 220px !important;
+    width: 100% !important;
+    height: 150px !important;
 }
 
 .letra-s{

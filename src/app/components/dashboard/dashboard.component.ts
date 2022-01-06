@@ -10,9 +10,11 @@ import {DialogHandlerService} from 'src/app/services/dialog-msj/dialog-handler.s
   template: `
   <mat-card style="box-shadow: none" >
     <nav class="flex flex-wrap justify-evenly flex-1 mb-16">
-      <mat-card class="example-card mt-4 pb-0" style="max-width: 280px" *ngFor="let card of cardsStore.state$ | async">
-        <mat-card-header class="mb-4">
-          <mat-card-title style="font-size: small" >{{card.producto |titlecase}}</mat-card-title>
+      <mat-card class="example-card mt-4 pb-0 mb-8" style="max-width: 120px" *ngFor="let card of cardsStore.state$ | async">
+        <mat-card-header class="mb-4 w-100 mx-0" >
+          <div style="height: 60px" class="w-100 mx-0">
+            <mat-card-title style="font-size: smaller;" class="w-100" >{{card.producto |titlecase}}</mat-card-title>
+          </div>
         </mat-card-header>
         <img mat-card-image [src]="card.imagen" alt="producto" class="mb-0 img-formato mx-0">
         <mat-card-actions class="flex justify-between pt-0 mb-4">
